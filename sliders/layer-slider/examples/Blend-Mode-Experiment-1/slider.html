@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blend Mode Experiment 1</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1920px;height:1080px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnszoom:in; kenburnsrotate:4; kenburnsscale:1.2;">
+			<img width="1920" height="1200" src="images/bm_bg1.jpg" class="ls-bg" alt="" />
+			<img width="3840" height="1200" src="images/bm_overlay.png" class="ls-l" alt="" style="top:50%; left:0%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:overlay;" data-ls="showinfo:1; durationin:1; easingin:easeInOutSine; fadein:false; loop:true; loopoffsetx:-3840; loopduration:5000; loopcount:-1;">
+			<p style="top:794px; left:906px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none; font-family:Impact; color:#ffffff; font-size:130px; mix-blend-mode:overlay;" class="ls-l" data-ls="showinfo:1; delayin:3000; texttransitionin:true; texttypein:chars_rand; textshiftin:100; textdurationin:6000; texteasingin:easeOutBack; textrotatein:720|360|540; textscalexin:0; textscaleyin:0; texttransformoriginin:-100% -100%| -100% 200%| 200% -100%| 200% 200%| 0 0| 0 100%| 100% 0| 100% 100%; loop:true; loopduration:8000; loopstartat:transitioninstart + 2000; loopeasing:easeInOutSine; looprotate:-6; loopcount:1; parallax:true; parallaxlevel:4;">Special Effects</p>
+			<p style="top:159px; left:618px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none; font-family:Impact; color:#ffffff; font-size:140px; mix-blend-mode:overlay;" class="ls-l" data-ls="showinfo:1; texttransitionin:true; texttypein:chars_rand; textshiftin:100; textdurationin:6000; texteasingin:easeOutBack; textrotatein:720|360|540; textscalexin:0; textscaleyin:0; texttransformoriginin:-100% -100%| -100% 200%| 200% -100%| 200% 200%| 0 0| 0 100%| 100% 0| 100% 100%; loop:true; loopduration:8000; loopstartat:transitioninstart + 3000; loopeasing:easeInOutSine; looprotate:-6; loopcount:1; parallax:true; parallaxlevel:2;">LayerSlider</p>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.2.2',
+				skin: 'v6',
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anniversary Slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1920px;height:1080px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2; parallaxtype:3d; parallaxdurationmove:500; parallaxdurationleave:2000; parallaxrotate:30;">
+			<img width="1920" height="1080" src="images/colorful2.jpg" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:2000; loop:true; loopduration:5000; loopstartat:allinend + 2000; loopeasing:easeInOutSine; loopscalex:0.95; loopscaley:0.95; loopcount:-1; loopyoyo:true; scaleX:1.1; scaleY:1.1;">
+			<img width="1920" height="1080" src="images/colorful1.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:2000; loop:true; loopduration:5000; loopstartat:allinend + 2000; loopeasing:easeInOutSine; loopscalex:0.85; loopscaley:0.85; loopcount:-1; loopyoyo:true; scaleX:1.2; scaleY:1.2;">
+			<img width="1920" height="1080" src="images/5a.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:2450; easingin:easeInOutQuad; rotatexin:75; rotateyin:-75; transformoriginin:25.5% 31.7% 0; parallax:true; parallaxlevel:6;">
+			<img width="1920" height="1080" src="images/ating.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:-100; offsetyin:100; durationin:1500; delayin:2300; easingin:easeInOutQuad; rotatein:5; parallax:true; parallaxlevel:6;">
+			<img width="1920" height="1080" src="images/ars.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:-100; offsetyin:100; durationin:1500; delayin:2900; easingin:easeInOutQuad; rotatein:5; parallax:true; parallaxlevel:6;">
+			<img width="1920" height="1080" src="images/5b.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:2250; easingin:easeInOutQuad; rotatexin:-75; rotateyin:75; transformoriginin:14.5% 57.7% 0; parallax:true; parallaxlevel:6;">
+			<img width="1920" height="1080" src="images/ye.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:100; offsetyin:-100; durationin:1500; delayin:2600; easingin:easeInOutQuad; rotatein:5; parallax:true; parallaxlevel:12;">
+			<img width="1920" height="1080" src="images/celebr.png" class="ls-l" alt="" style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:100; offsetyin:-100; durationin:1500; delayin:2000; easingin:easeInOutQuad; rotatein:5; parallax:true; parallaxlevel:12;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.1.6',
+				skin: 'v6',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

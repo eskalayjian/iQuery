@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Old (v4) demo slider with 3D transitions</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1000px;height:500px;margin:0 auto;margin-bottom: 50px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:7200; transition2d:all; transition3d:15; kenburnsscale:1.2;">
+			<img width="1000" height="500" src="images/abyss-bg.jpg" class="ls-bg" alt="" />
+			<img width="318" height="135" src="images/bg-fishes-far.png" class="ls-l" alt="" style="top:186px; left:701px;" data-ls="offsetxin:right; durationin:50; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:11000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="318" height="135" src="images/bg-fishes-far.png" class="ls-l" alt="" style="top:251px; left:857px;" data-ls="offsetxin:right; durationin:50; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:9000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="406" height="172" src="images/bg-fishes-mid.png" class="ls-l" alt="" style="top:131px; left:358px;" data-ls="offsetxin:right; durationin:3000; delayin:1000; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="406" height="172" src="images/bg-fishes-mid.png" class="ls-l" alt="" style="top:196px; left:255px;" data-ls="offsetxin:right; durationin:4000; delayin:1000; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/abyss-bg-mask.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="durationin:0; easingin:linear; scalexin:1.0; scaleyin:1.0; durationout:0; easingout:linear; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<h1 style="text-shadow: 0px 0px 20px white; font-weight: normal;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:50px; color:white; top:30%; left:50%;" class="ls-l" data-ls="durationin:2500; scalexin:1.0; scaleyin:1.0; durationout:2500; startatout:transitioninend + 1; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+				LayerSlider
+			</h1>
+			<h1 style="text-shadow: 0px 0px 20px white; font-weight: normal;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:120px; color:white; top:50%; left:50%;" class="ls-l" data-ls="durationin:2500; delayin:500; scalexin:1.0; scaleyin:1.0; durationout:2500; startatout:transitioninend + 1; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+				3D
+			</h1>
+			<h1 style="text-shadow: 0px 0px 20px white; font-weight: normal;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:50px; color:white; top:70%; left:50%;" class="ls-l" data-ls="durationin:2500; delayin:1200; scalexin:1.0; scaleyin:1.0; durationout:2500; startatout:transitioninend + 1; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+				demo slider
+			</h1>
+			<img width="200" height="50" src="images/shark.png" class="ls-l" alt="" style="top:20px; left:1000px;" data-ls="offsetxin:left; durationin:6500; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:0; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="115" height="59" src="images/small-fish-far.png" class="ls-l" alt="" style="top:218px; left:481px;" data-ls="offsetxin:right; durationin:4000; delayin:2000; easingin:easeOutQuad; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:4000; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="115" height="59" src="images/small-fish-far.png" class="ls-l" alt="" style="top:286px; left:646px;" data-ls="offsetxin:right; durationin:4000; delayin:3000; easingin:easeOutQuad; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="140" height="71" src="images/small-fish-mid.png" class="ls-l" alt="" style="top:315px; left:325px;" data-ls="offsetxin:right; durationin:4000; delayin:2500; easingin:easeOutQuad; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:4000; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="190" height="97" src="images/small-fish-close.png" class="ls-l" alt="" style="top:143px; left:695px;" data-ls="offsetxin:right; durationin:4000; delayin:3500; easingin:easeOutQuad; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:2500; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="140" height="71" src="images/small-fish-mid.png" class="ls-l" alt="" style="top:84px; left:458px;" data-ls="offsetxin:right; durationin:3000; delayin:2800; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="250" height="186" src="images/med-fish-mid.png" class="ls-l" alt="" style="top:272px; left:685px;" data-ls="offsetxin:right; durationin:2000; delayin:3000; easingin:easeOutExpo; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="250" height="186" src="images/med-fish-mid.png" class="ls-l" alt="" style="top:70px; left:244px;" data-ls="offsetxin:right; durationin:2000; delayin:5300; easingin:easeOutExpo; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:2000; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="250" height="186" src="images/med-fish-mid.png" class="ls-l" alt="" style="top:200px; left:196px;" data-ls="offsetxin:right; durationin:2000; delayin:4000; easingin:easeOutExpo; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="325" height="242" src="images/med-fish-close.png" class="ls-l" alt="" style="top:246px; left:339px;" data-ls="offsetxin:right; durationin:2400; delayin:5500; easingin:easeOutExpo; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:2000; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="488" height="348" src="images/big-fish-close.png" class="ls-l" alt="" style="top:12px; left:344px;" data-ls="offsetxin:right; durationin:2000; delayin:3300; easingin:easeOutCirc; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:3000; startatout:transitioninend + 1; easingout:easeInOutExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="488" height="348" src="images/big-fish-close.png" class="ls-l" alt="" style="top:194px; left:454px;" data-ls="offsetxin:right; durationin:2000; delayin:6000; easingin:easeOutExpo; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1700; easingout:easeInExpo; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:4500; transition2d:all; transition3d:36; timeshift:-1000; overflow:true; kenburnsscale:1.2;">
+			<img width="1000" height="500" src="images/3d-bg.jpg" class="ls-bg" alt="" />
+			<img width="74" height="78" src="images/small-cube-blur.png" class="ls-l" alt="" style="top:20px; left:106px;" data-ls="offsetyin:top; durationin:3000; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 1; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="78" src="images/small-cube-blur.png" class="ls-l" alt="" style="top:153px; left:342px;" data-ls="offsetyin:top; durationin:3000; delayin:50; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 700; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="78" src="images/small-cube-blur.png" class="ls-l" alt="" style="top:276px; left:252px;" data-ls="offsetyin:top; durationin:3000; delayin:100; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 400; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="78" src="images/small-cube-blur.png" class="ls-l" alt="" style="top:199px; left:585px;" data-ls="offsetyin:top; durationin:3000; delayin:50; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 950; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="78" src="images/small-cube-blur.png" class="ls-l" alt="" style="top:37px; left:525px;" data-ls="offsetyin:top; durationin:3000; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 250; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="601" height="45" src="images/sayhello.png" class="ls-l" alt="" style="top:116px; left:86px;" data-ls="durationin:1500; delayin:1500; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="102" height="103" src="images/mid-cube-blur.png" class="ls-l" alt="" style="top:190px; left:135px;" data-ls="offsetyin:top; durationin:3000; delayin:50; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 100; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="102" height="103" src="images/mid-cube-blur.png" class="ls-l" alt="" style="top:340px; left:322px;" data-ls="offsetyin:top; durationin:3000; delayin:150; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 500; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="102" height="103" src="images/mid-cube-blur.png" class="ls-l" alt="" style="top:398px; left:587px;" data-ls="offsetyin:top; durationin:3000; delayin:100; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 300; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="216" height="224" src="images/big-cube.png" class="ls-l" alt="" style="top:211px; left:16px;" data-ls="offsetyin:top; durationin:3000; delayin:100; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 300; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="216" height="224" src="images/big-cube.png" class="ls-l" alt="" style="top:251px; left:746px;" data-ls="offsetyin:top; durationin:3000; delayin:200; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 50; easingout:easeInBack; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:5600; transition2d:all; transition3d:58,74; kenburnsscale:1.2;">
+			<img width="1000" height="500" src="images/autumn-bg.jpg" class="ls-bg" alt="" />
+			<img width="1000" height="500" src="images/summer-bg.jpg" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="durationin:2500; delayin:2500; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="77" src="images/a-l-1.png" class="ls-l" alt="" style="top:9px; left:101px;" data-ls="offsetyin:bottom; durationin:2000; easingin:easeOutQuint; fadein:false; rotatein:360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="69" height="72" src="images/a-l-2.png" class="ls-l" alt="" style="top:210px; left:240px;" data-ls="offsetyin:bottom; durationin:2000; delayin:200; easingin:easeOutQuint; fadein:false; rotatein:-360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="53" height="92" src="images/a-l-3.png" class="ls-l" alt="" style="top:193px; left:480px;" data-ls="offsetyin:bottom; durationin:2000; delayin:400; easingin:easeOutQuint; fadein:false; rotatein:360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="93" height="87" src="images/a-l-4.png" class="ls-l" alt="" style="top:311px; left:623px;" data-ls="offsetyin:bottom; durationin:2000; delayin:600; easingin:easeOutQuint; fadein:false; rotatein:-360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="90" height="82" src="images/a-l-5.png" class="ls-l" alt="" style="top:407px; left:371px;" data-ls="offsetyin:bottom; durationin:2000; delayin:800; easingin:easeOutQuint; fadein:false; rotatein:360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="75" height="86" src="images/a-l-6.png" class="ls-l" alt="" style="top:232px; left:392px;" data-ls="offsetyin:bottom; durationin:2000; delayin:1000; easingin:easeOutQuint; fadein:false; rotatein:-360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="88" height="88" src="images/a-l-7.png" class="ls-l" alt="" style="top:190px; left:67px;" data-ls="offsetyin:bottom; durationin:2000; delayin:1200; easingin:easeOutQuint; fadein:false; rotatein:360; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="74" height="77" src="images/s-l-1.png" class="ls-l" alt="" style="top:9px; left:101px;" data-ls="delayin:2500; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="69" height="72" src="images/s-l-2.png" class="ls-l" alt="" style="top:210px; left:240px;" data-ls="delayin:2700; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="53" height="92" src="images/s-l-3.png" class="ls-l" alt="" style="top:193px; left:480px;" data-ls="delayin:2900; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="93" height="87" src="images/s-l-4.png" class="ls-l" alt="" style="top:311px; left:623px;" data-ls="delayin:3100; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="90" height="82" src="images/s-l-5.png" class="ls-l" alt="" style="top:407px; left:371px;" data-ls="delayin:3300; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="75" height="86" src="images/s-l-6.png" class="ls-l" alt="" style="top:232px; left:392px;" data-ls="delayin:3500; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="88" height="88" src="images/s-l-7.png" class="ls-l" alt="" style="top:190px; left:67px;" data-ls="delayin:3700; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:30px; color:white; top:83px; left:277px;" class="ls-l" data-ls="offsetxin:left; delayin:1000; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 2000; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">The improve</p>
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:60px; color:white; top:62px; left:451px;" class="ls-l" data-ls="offsetyin:top; durationin:2000; delayin:1500; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:top; durationout:1500; startatout:transitioninend + 500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">is</p>
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:30px; color:white; top:83px; left:503px;" class="ls-l" data-ls="offsetxin:right; delayin:1000; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 2000; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">to change.</p>
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:30px; color:white; top:137px; left:367px;" class="ls-l" data-ls="offsetxin:left; delayin:1750; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">To be perfect</p>
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:60px; color:white; top:116px; left:555px;" class="ls-l" data-ls="offsetyin:top; durationin:1500; delayin:2250; easingin:easeOutElastic; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:bottom; durationout:1500; startatout:transitioninend + 500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">is</p>
+			<p style="text-shadow: 0px 0px 10px white;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:30px; color:white; top:137px; left:608px;" class="ls-l" data-ls="offsetxin:right; delayin:1750; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:right; durationout:1500; startatout:transitioninend + 1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">to change often.</p>
+			<p style="text-shadow: 0px 0px 10px white; font-style: italic;font-family:'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; color:white; top:198px; left:722px;" class="ls-l" data-ls="delayin:2500; scalexin:1.0; scaleyin:1.0; durationout:1500; startatout:transitioninend + 1000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">- Winston Churchill</p>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:10050; transition2d:all; transition3d:68,69,77,78; kenburnsscale:1.2;">
+			<img width="1000" height="500" src="images/cubes-bg.jpg" class="ls-bg" alt="" />
+			<img width="1000" height="500" src="images/cubes-blur.jpg" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="easingin:easeInOutQuad; scalexin:1.0; scaleyin:1.0; easingout:easeInOutQuad; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-1.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:top; durationin:2500; delayin:500; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5700; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-2.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetxin:right; durationin:2500; delayin:600; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5100; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-3.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:bottom; durationin:2500; delayin:700; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5200; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-4.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetxin:left; durationin:2500; delayin:800; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-5.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:top; durationin:2500; delayin:900; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-6.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetxin:right; durationin:2500; delayin:1000; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 4600; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-7.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:bottom; durationin:2500; delayin:1100; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 5100; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-8.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetxin:left; durationin:2500; delayin:1200; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 4800; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/tile-9.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:top; durationin:2500; delayin:1300; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:1500; startatout:transitioninend + 4500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<p style="box-shadow: 0px 3px 10px -3px #002c4b; background: #02cef7; background: -moz-linear-gradient(top, #02cef7 0%, #009bba 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cef7), color-stop(100%,#009bba)); background: -webkit-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -o-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -ms-linear-gradient(top, #02cef7 0%,#009bba 100%); background: linear-gradient(to bottom, #02cef7 0%,#009bba 100%); text-shadow: 0px -1px 1px #00819c;padding-top:10px; padding-right:15px; padding-bottom:10px; padding-left:15px; border-top:4px solid white; font-family:Helvetica, Arial, sans-serif; font-size:20px; color:white; border-radius:7px; top:45px; left:30px;" class="ls-l" data-ls="offsetyin:top; delayin:1500; easingin:easeOutExpo; fadein:false; rotatein:-120; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 2000; easingout:easeInQuart; scalexout:.5; scaleyout:.5; parallaxlevel:0;">200+ 2D &amp; 3D transitions with Transition Builder!</p>
+			<p style="box-shadow: 0px 3px 10px -3px #002c4b; background: #02cef7; background: -moz-linear-gradient(top, #02cef7 0%, #009bba 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cef7), color-stop(100%,#009bba)); background: -webkit-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -o-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -ms-linear-gradient(top, #02cef7 0%,#009bba 100%); background: linear-gradient(to bottom, #02cef7 0%,#009bba 100%); text-shadow: 0px -1px 1px #00819c;padding-top:10px; padding-right:15px; padding-bottom:10px; padding-left:15px; border-top:4px solid white; font-family:Helvetica, Arial, sans-serif; font-size:20px; color:white; border-radius:7px; top:360px; left:450px;" class="ls-l" data-ls="offsetyin:bottom; delayin:3000; easingin:easeOutExpo; fadein:false; rotatein:-120; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 2000; easingout:easeInQuart; scalexout:.5; scaleyout:.5; parallaxlevel:0;">Use with any HTML content including embedded videos!</p>
+			<p style="box-shadow: 0px 3px 10px -3px #002c4b; background: #02cef7; background: -moz-linear-gradient(top, #02cef7 0%, #009bba 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cef7), color-stop(100%,#009bba)); background: -webkit-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -o-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -ms-linear-gradient(top, #02cef7 0%,#009bba 100%); background: linear-gradient(to bottom, #02cef7 0%,#009bba 100%); text-shadow: 0px -1px 1px #00819c;padding-top:10px; padding-right:15px; padding-bottom:10px; padding-left:15px; border-top:4px solid white; font-family:Helvetica, Arial, sans-serif; font-size:20px; color:white; border-radius:7px; top:100px; left:505px;" class="ls-l" data-ls="offsetxin:right; delayin:4500; easingin:easeOutExpo; fadein:false; rotatein:120; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 2000; easingout:easeInQuart; scalexout:.5; scaleyout:.5; parallaxlevel:0;">Responsive with Smart Resize &amp; Touch-enabled!</p>
+			<p style="box-shadow: 0px 3px 10px -3px #002c4b; background: #02cef7; background: -moz-linear-gradient(top, #02cef7 0%, #009bba 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cef7), color-stop(100%,#009bba)); background: -webkit-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -o-linear-gradient(top, #02cef7 0%,#009bba 100%); background: -ms-linear-gradient(top, #02cef7 0%,#009bba 100%); background: linear-gradient(to bottom, #02cef7 0%,#009bba 100%); text-shadow: 0px -1px 1px #00819c;padding-top:10px; padding-right:15px; padding-bottom:10px; padding-left:15px; border-top:4px solid white; font-family:Helvetica, Arial, sans-serif; font-size:20px; color:white; border-radius:7px; top:400px; left:10px;" class="ls-l" data-ls="offsetxin:left; delayin:6000; easingin:easeOutExpo; fadein:false; rotatein:120; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 2000; easingout:easeInQuart; scalexout:.5; scaleyout:.5; parallaxlevel:0;">Multisite, Multi-language &amp; Localization ready!</p>
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:6000; transition2d:all; transition3d:45,46,47,48,49,50; kenburnsscale:1.2;">
+			<img width="1000" height="500" src="images/bbb-bg.jpg" class="ls-bg" alt="" />
+			<img width="813" height="232" src="images/bbb-clouds-far.png" class="ls-l" alt="" style="top:-90px; left:500px;" data-ls="durationin:2000; delayin:1000; easingin:easeInOutQuad; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:50000; startatout:transitioninend + 1; easingout:easeInQuad; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="511" height="202" src="images/bbb-clouds-close.png" class="ls-l" alt="" style="top:-60px; left:1000px;" data-ls="offsetxin:right; durationin:0; delayin:10000; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; offsetxout:left; durationout:40000; startatout:transitioninend + 1; easingout:linear; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="1000" height="500" src="images/bbb-bg-mask.png" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="offsetyin:top; durationin:0; delayin:1000; easingin:linear; fadein:false; scalexin:1.0; scaleyin:1.0; durationout:1500; easingout:linear; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<div style="box-shadow: 0px 5px 35px -2px black;width:510px; height:291px; background:white; border-radius:2px; top:154px; left:465px;" class="ls-l" data-ls="offsetxin:right; durationin:1500; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:bottom; durationout:1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;"></div>
+			<div style="top:159px; left:470px;" class="ls-l" data-ls="offsetxin:right; durationin:1500; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:bottom; durationout:1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+				<iframe width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-src="http://player.vimeo.com/video/79287693?title=0&amp;byline=0&amp;portrait=0&amp;color=e4f000"></iframe>
+			</div>
+			<img width="185" height="82" src="images/easy.png" class="ls-l" alt="" style="top:35px; left:715px;" data-ls="offsetyin:top; durationin:1500; delayin:1500; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:top; durationout:1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="272" height="67" src="images/vfeatures.png" class="ls-l" alt="" style="top:37px; left:188px;" data-ls="durationin:1500; delayin:5000; scalexin:1.0; scaleyin:1.0; durationout:1500; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="70" height="80" src="images/bi-colored-butterfly-source_ijc.gif" class="ls-l" alt="" style="top:304px; left:159px;" data-ls="offsetyin:bottom; durationin:2000; delayin:3000; easingin:easeOutBack; fadein:false; scalexin:1.0; scaleyin:1.0; offsetyout:top; durationout:1500; fadeout:false; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+			<img width="228" height="123" src="images/acorn.png" class="ls-l" alt="" style="top:119px; left:234px;" data-ls="delayin:16000; scalexin:1.0; scaleyin:1.0; startatout:transitioninend + 2000; scalexout:1.0; scaleyout:1.0; parallaxlevel:0;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				responsiveUnder: 0,
+				layersContainer: 0,
+				slideBGSize: 'auto',
+				skin: 'borderlessdark3d',
+				globalBGColor: 'transparent',
+				hoverBottomNav: true,
+				yourLogoStyle: 'left: 10px; top: 10px;',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

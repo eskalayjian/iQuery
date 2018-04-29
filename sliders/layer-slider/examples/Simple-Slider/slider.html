@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,regular,700|Roboto:regular">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1140px;height:640px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.00;">
+			<img width="1200" height="800" src="images/slide-1.jpg" class="ls-bg" alt="" />
+			<div style="width:440px; height:120px; background:#ffffff; top:50%; left:50%;" class="ls-l" data-ls="scalexin:0; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;"></div>
+			<p style="letter-spacing:1.6px;font-family:Roboto; font-size:20px; color:#363636; top:292px; left:50%;" class="ls-l" data-ls="offsetyin:100%; durationin:900; delayin:100; clipin:0 0 100% 0; durationout:400; parallaxlevel:0;">BUILDING YOUR BRAND IS SIMPLE</p>
+			<p style="font-family:Roboto Slab; font-size:15px; color:#878787; top:325px; left:518px;" class="ls-l" data-ls="offsetyin:-100%; durationin:900; delayin:100; clipin:100% 0 0 0; durationout:400; parallaxlevel:0;">business, lifestyle</p>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.2;">
+			<img width="1200" height="800" src="images/slide-2.jpg" class="ls-bg" alt="" />
+			<div style="width:440px; height:120px; background:#ffffff; top:50%; left:50%;" class="ls-l" data-ls="scalexin:0; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;"></div>
+			<p style="letter-spacing:1.6px;font-family:Roboto; font-size:20px; color:#363636; top:292px; left:50%;" class="ls-l" data-ls="offsetyin:100%; durationin:900; delayin:100; clipin:0 0 100% 0; durationout:400; parallaxlevel:0;">BUILDING YOUR BRAND IS SIMPLE</p>
+			<p style="font-family:Roboto Slab; font-size:15px; color:#878787; top:325px; left:518px;" class="ls-l" data-ls="offsetyin:-100%; durationin:900; delayin:100; clipin:100% 0 0 0; durationout:400; parallaxlevel:0;">business, lifestyle</p>
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:104; kenburnsscale:1.2;">
+			<img width="1200" height="800" src="images/slide-3.jpg" class="ls-bg" alt="" />
+			<div style="width:440px; height:120px; background:#ffffff; top:50%; left:50%;" class="ls-l" data-ls="scalexin:0; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;"></div>
+			<p style="letter-spacing:1.6px;font-family:Roboto; font-size:20px; color:#363636; top:292px; left:50%;" class="ls-l" data-ls="offsetyin:100%; durationin:900; delayin:100; clipin:0 0 100% 0; durationout:400; parallaxlevel:0;">BUILDING YOUR BRAND IS SIMPLE</p>
+			<p style="font-family:Roboto Slab; font-size:15px; color:#878787; top:325px; left:518px;" class="ls-l" data-ls="offsetyin:-100%; durationin:900; delayin:100; clipin:100% 0 0 0; durationout:400; parallaxlevel:0;">business, lifestyle</p>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				responsiveUnder: 0,
+				maxRatio: 1,
+				slideBGSize: 'auto',
+				hideUnder: 0,
+				hideOver: 100000,
+				skin: 'outline',
+				thumbnailNavigation: 'disabled',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

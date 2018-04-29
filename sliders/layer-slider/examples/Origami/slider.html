@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Origami</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/origami/layerslider.origami.css">
+	<script src="../../layerslider/plugins/origami/layerslider.origami.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1920px;height:848px;margin:0 auto;margin-top: 0px !important;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:1000; transitionorigami:true; overflow:true; kenburnsscale:1.2;">
+			<img width="1920" height="848" src="images/o2-1.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:1000; transitionorigami:true; overflow:true; kenburnsscale:1.2;">
+			<img width="1920" height="848" src="images/o2-3.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:1000; transitionorigami:true; overflow:true; kenburnsscale:1.2;">
+			<img width="1920" height="848" src="images/o2-5.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:1000; transitionorigami:true; overflow:true; kenburnsscale:1.2;">
+			<img width="1920" height="848" src="images/o2-2.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:1000; transitionorigami:true; overflow:true; kenburnsscale:1.2;">
+			<img width="1920" height="848" src="images/o2-4.jpg" class="ls-bg" alt="" />
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.1.0',
+				pauseOnHover: 'disabled',
+				skin: 'v6',
+				navStartStop: false,
+				hoverBottomNav: true,
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["origami"]
+			});
+		});
+
+	</script>
+</body>
+</html>

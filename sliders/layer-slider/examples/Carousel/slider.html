@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:720px;margin:0 auto;margin-bottom: 50px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgsize:contain; bgposition:50% 50%; duration:4000; transition2d:73; kenburnsscale:1.2;">
+			<img width="1000" height="1000" src="images/darth-vader-fig.png" class="ls-bg" alt="" />
+			<p style="font-family:Poppins; font-size:90px; line-height:90px; color:#3d3d3d; top:442px; left:882px; font-weight:300;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:500; easingin:easeOutQuint; clipin:0 0 0 100%; transitionout:false; texttransitionout:true; texttypeout:chars_asc; textshiftout:0; textoffsetyout:50|-50; textdurationout:500; textstartatout:allinandloopend + 2000; parallaxlevel:0;">$14.95</p>
+			<p style="font-family:Poppins; font-size:50px; line-height:50px; color:#3d3d3d; top:552px; left:883px; font-weight:600;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">Darth Vader</p>
+			<p style="letter-spacing:7px;font-family:Poppins; font-size:24px; line-height:24px; color:#fa694b; top:602px; left:885px; font-weight:700;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">STAR WARS</p>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="bgsize:contain; bgposition:50% 50%; duration:4000; transition2d:73; kenburnsscale:1.2;">
+			<img width="1000" height="1000" src="images/yoda-fig.png" class="ls-bg" alt="" />
+			<p style="font-family:Poppins; font-size:90px; line-height:90px; color:#3d3d3d; top:442px; left:882px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:500; easingin:easeOutQuint; clipin:0 0 0 100%; transitionout:false; texttransitionout:true; texttypeout:chars_asc; textshiftout:0; textoffsetyout:50|-50; textdurationout:500; textstartatout:allinandloopend + 2000; parallaxlevel:0;">$14.95</p>
+			<p style="font-weight:600;overflow:hidden;font-family:Poppins; font-size:50px; line-height:50px; color:#3d3d3d; top:552px; left:883px;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">Yoda</p>
+			<p style="letter-spacing:7px;font-family:Poppins; font-size:24px; line-height:24px; color:#fa694b; top:602px; left:885px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; style:letter-spacing:7px;;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">STAR WARS</p>
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="bgsize:contain; bgposition:50% 50%; duration:4000; transition2d:73; kenburnsscale:1.2;">
+			<img width="1000" height="1000" src="images/han-solo.png" class="ls-bg" alt="" />
+			<p style="font-family:Poppins; font-size:90px; line-height:90px; color:#3d3d3d; top:442px; left:882px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:500; easingin:easeOutQuint; clipin:0 0 0 100%; transitionout:false; texttransitionout:true; texttypeout:chars_asc; textshiftout:0; textoffsetyout:50|-50; textdurationout:500; textstartatout:allinandloopend + 2000; parallaxlevel:0;">$14.95</p>
+			<p style="font-family:Poppins; font-size:50px; line-height:50px; color:#3d3d3d; top:552px; left:883px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">Han Solo</p>
+			<p style="letter-spacing:7px;font-family:Poppins; font-size:24px; line-height:24px; color:#fa694b; top:602px; left:885px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; style:letter-spacing:7px;;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">STAR WARS</p>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="bgsize:contain; bgposition:50% 50%; duration:4000; transition2d:73; kenburnsscale:1.2;">
+			<img width="1000" height="1000" src="images/darth-maul.png" class="ls-bg" alt="" />
+			<p style="font-family:Poppins; font-size:90px; line-height:90px; color:#3d3d3d; top:442px; left:882px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:500; easingin:easeOutQuint; clipin:0 0 0 100%; transitionout:false; texttransitionout:true; texttypeout:chars_asc; textshiftout:0; textoffsetyout:50|-50; textdurationout:500; textstartatout:allinandloopend + 2000; parallaxlevel:0;">$14.95</p>
+			<p style="font-family:Poppins; font-size:50px; line-height:50px; color:#3d3d3d; top:552px; left:883px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">Darth Maul</p>
+			<p style="letter-spacing:7px;font-family:Poppins; font-size:24px; line-height:24px; color:#fa694b; top:602px; left:885px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; style:letter-spacing:7px;;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">STAR WARS</p>
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="bgsize:contain; bgposition:50% 50%; duration:4000; transition2d:73; kenburnsscale:1.2;">
+			<img width="1000" height="1000" src="images/edvin-duck.png" class="ls-bg" alt="" />
+			<p style="font-family:Poppins; font-size:90px; line-height:90px; color:#3d3d3d; top:442px; left:882px; text-align:initial; font-weight:300; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:500; easingin:easeOutQuint; clipin:0 0 0 100%; transitionout:false; texttransitionout:true; texttypeout:chars_asc; textshiftout:0; textoffsetyout:50|-50; textdurationout:500; textstartatout:allinandloopend + 2000; parallaxlevel:0;">$14.95</p>
+			<p style="letter-spacing:-1px;font-family:Poppins; font-size:50px; line-height:50px; color:#3d3d3d; top:552px; left:883px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">Edwin the Duck</p>
+			<p style="letter-spacing:7px;font-family:Poppins; font-size:24px; line-height:24px; color:#fa694b; top:602px; left:885px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; style:letter-spacing:7px;;" class="ls-l" data-ls="offsetxin:-100%; durationin:600; delayin:400; easingin:easeOutQuint; clipin:0 0 0 100%; offsetxout:-100%; durationout:500; clipout:0 0 0 100%; parallaxlevel:0;">LEARNING TOY</p>
+			<div style="width:25px; height:25px; background:#3d3d3d; border-radius:50%; top:282px; left:401px;" class="ls-l" data-ls="delayin:1000; durationout:500; startatout:transitioninend + 1000; parallaxlevel:0;"></div>
+			<div style="width:39px; height:39px; background:#3d3d3d; border-radius:50%; top:251px; left:328px;" class="ls-l" data-ls="delayin:1200; durationout:500; startatout:transitioninend + 1000; parallaxlevel:0;"></div>
+			<img width="224" height="160" src="images/quark.png" class="ls-l" alt="" style="top:75px; left:160px;" data-ls="delayin:1400; durationout:500; startatout:transitioninend + 1000; parallaxlevel:0;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				responsiveUnder: 0,
+				slideBGSize: 'auto',
+				hideUnder: 0,
+				hideOver: 100000,
+				twoWaySlideshow: true,
+				skin: 'roundedflat',
+				globalBGColor: 'transparent',
+				thumbnailNavigation: 'always',
+				tnContainerWidth: '100%',
+				tnWidth: 180,
+				tnHeight: 130,
+				yourLogoStyle: 'left: 10px; top: 10px;',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

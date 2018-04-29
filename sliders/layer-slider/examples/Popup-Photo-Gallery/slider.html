@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Popup Photo Gallery</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/popup/layerslider.popup.css">
+	<script src="../../layerslider/plugins/popup/layerslider.popup.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div class="ls-popup">
+		<div id="slider" style="width:1280px;height:720px;margin:0 auto;margin-bottom: 0px;">
+			
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
+				<img width="1280" height="853" src="images/photogallery-7.jpg" class="ls-bg" alt="" />
+			</div>
+			
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:out; kenburnsscale:1.2;">
+				<img width="1280" height="853" src="images/photogallery-3.jpg" class="ls-bg" alt="" />
+			</div>
+			
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
+				<img width="1280" height="893" src="images/photogallery-2.jpg" class="ls-bg" alt="" />
+			</div>
+			
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:out; kenburnsscale:1.2;">
+				<img width="1280" height="853" src="images/photogallery-1.jpg" class="ls-bg" alt="" />
+			</div>
+			
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;">
+				<img width="1280" height="774" src="images/photogallery-6.jpg" class="ls-bg" alt="" />
+			</div>
+			
+		
+		<!-- Slide 6-->
+		<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:out; kenburnsscale:1.2;">
+				<img width="1280" height="853" src="images/photogallery-5.jpg" class="ls-bg" alt="" />
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.0b2',
+				type: 'popup',
+				pauseOnHover: 'disabled',
+				skin: 'photogallery',
+				globalBGSize: 'cover',
+				navStartStop: false,
+				hoverBottomNav: true,
+				showCircleTimer: false,
+				thumbnailNavigation: 'always',
+				tnContainerWidth: '100%',
+				tnHeight: 70,
+				popupShowOnTimeout: 1,
+				popupShowOnce: false,
+				popupCloseButtonStyle: 'background: rgba(0,0,0,.5); border-radius: 2px; border: 0; left: auto; right: 10px;',
+				popupResetOnClose: 'disabled',
+				popupDistanceLeft: 20,
+				popupDistanceRight: 20,
+				popupDistanceTop: 20,
+				popupDistanceBottom: 20,
+				popupDurationIn: 750,
+				popupDelayIn: 500,
+				popupTransitionIn: 'scalefromtop',
+				popupTransitionOut: 'scaletobottom',
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["popup"]
+			});
+		});
+
+	</script>
+</body>
+</html>

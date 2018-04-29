@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Previous (v5) demo slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900,400|Open+Sans:300,400|Oswald:300,regular,700|Indie+Flower:regular">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:720px;max-width:1280px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:8000; transition2d:75,79; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/bg.jpg" class="ls-bg" alt="" />
+			<img width="1280" height="720" src="images/bg21.jpg" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="durationin:2000; easingin:linear; durationout:6000; startatout:transitioninend + 1; easingout:linear; parallaxlevel:0;">
+			<h1 style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:40px; color:#286e89; top:60px; left:800px;" class="ls-l" data-ls="offsetxin:50; durationin:3000; rotateyin:60; transformoriginin:right 50% 0; offsetxout:-50; durationout:3000; startatout:transitioninend + 400; rotateyout:-60; transformoriginout:left 50% 0; parallaxlevel:0;">
+				KREATURA MEDIA
+			</h1>
+			<h2 style="font-weight: 500;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#fa6b4b; top:100px; left:801px;" class="ls-l" data-ls="offsetxin:-50; durationin:3000; delayin:500; rotateyin:-60; transformoriginin:left 50% 0; offsetxout:50; durationout:3000; startatout:transitioninend + 1; rotateyout:60; transformoriginout:right 50% 0; parallaxlevel:0;">
+				presents
+			</h2>
+			<img width="150" height="150" src="images/slide-d-5-5.png" class="ls-l" alt="" style="top:450px; left:100px;" data-ls="durationin:750; delayin:1000; rotateyin:90; transformoriginin:left 50% 0; durationout:750; rotateyout:90; transformoriginout:right -50% 0; parallaxlevel:0;">
+			<img width="150" height="150" src="images/slide-d-5-6.png" class="ls-l" alt="" style="top:450px; left:250px;" data-ls="durationin:750; delayin:1300; rotateyin:90; transformoriginin:left 50% 0; durationout:750; rotateyout:90; transformoriginout:left -50% 0; parallaxlevel:0;">
+			<img width="150" height="150" src="images/slide-d-5-4.png" class="ls-l" alt="" style="top:300px; left:250px;" data-ls="durationin:750; delayin:1600; rotatexin:90; transformoriginin:50% bottom 0; durationout:500; rotateyout:90; skewyout:1; transformoriginout:left 50% 0; parallaxlevel:0;">
+			<img width="150" height="150" src="images/slide-d-5-3.png" class="ls-l" alt="" style="top:300px; left:100px;" data-ls="durationin:750; delayin:1900; rotateyin:-90; transformoriginin:right 50% 0; durationout:750; rotateyout:90; transformoriginout:right 50% 0; parallaxlevel:0;">
+			<img width="150" height="150" src="images/slide-d-5-1.png" class="ls-l" alt="" style="top:150px; left:100px;" data-ls="durationin:750; delayin:2200; rotatexin:90; transformoriginin:50% bottom 0; durationout:750; rotateyout:90; transformoriginout:right 150% 0; parallaxlevel:0;">
+			<img width="150" height="150" src="images/slide-d-5-2.png" class="ls-l" alt="" style="top:150px; left:250px;" data-ls="durationin:750; delayin:2500; rotateyin:90; transformoriginin:left 50% 0; durationout:750; rotateyout:90; transformoriginout:left 150% 0; parallaxlevel:0;">
+			<h1 style="font-weight: 500; text-align: center; opacity: .5;width:340px; font-family:Oswald, Lato, 'Open Sans', sans-serif; font-size:60px; color:#a14730; border-radius:5px; top:65px; left:80px;" class="ls-l" data-ls="durationin:2500; delayin:3000; easingin:easeOutElastic; rotatexin:90; transformoriginin:50% bottom 0; durationout:400; rotateout:-90; transformoriginout:left bottom 0; parallaxlevel:0;">
+				LAYERSLIDER
+			</h1>
+			<p style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffffff; background:#fa6b4b; border-radius:4px; top:150px; left:500px;" class="ls-l" data-ls="offsetxin:80; durationin:1500; delayin:3300; rotatein:20; rotatexin:30; scalexin:1.5; scaleyin:1.5; transformoriginin:left 50% 0; offsetxout:-80; durationout:750; rotateout:20; rotatexout:-30; scalexout:0; scaleyout:0; transformoriginout:left 50% 0; parallaxlevel:0;">DYNAMIC SLIDER</p>
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; color:#333; top:190px; left:500px;" class="ls-l" data-ls="durationin:1500; delayin:3700; rotateyin:90; skewxin:60; transformoriginin:25% 50% 0; offsetxout:100; durationout:750; skewxout:60; parallaxlevel:0;">from your <span style="font-weight: 500; color: #555;">WordPress posts</span> and pages</p>
+			<p style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffffff; background:#fa6b4b; border-radius:4px; top:250px; left:500px;" class="ls-l" data-ls="offsetxin:80; durationin:1500; delayin:4000; rotatein:20; rotatexin:30; scalexin:1.5; scaleyin:1.5; transformoriginin:left 50% 0; offsetxout:-80; durationout:750; rotateout:20; rotatexout:-30; scalexout:0; scaleyout:0; transformoriginout:left 50% 0; parallaxlevel:0;">TIMELINE VIEW</p>
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; color:#333; top:290px; left:500px;" class="ls-l" data-ls="durationin:1500; delayin:4400; rotateyin:90; skewxin:60; transformoriginin:25% 50% 0; offsetxout:100; durationout:750; skewxout:60; parallaxlevel:0;">for better timings</p>
+			<p style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffffff; background:#fa6b4b; border-radius:4px; top:350px; left:500px;" class="ls-l" data-ls="offsetxin:80; durationin:1500; delayin:4700; rotatein:20; rotatexin:30; scalexin:1.5; scaleyin:1.5; transformoriginin:left 50% 0; offsetxout:-80; durationout:750; rotateout:20; rotatexout:-30; scalexout:0; scaleyout:0; transformoriginout:left 50% 0; parallaxlevel:0;">NEW TRANSITIONS</p>
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; color:#333; top:390px; left:499px;" class="ls-l" data-ls="durationin:1500; delayin:5100; rotateyin:90; skewxin:60; transformoriginin:25% 50% 0; offsetxout:100; durationout:750; skewxout:60; parallaxlevel:0;">slide, fade, scale, skew and rotate layers even in 3D</p>
+			<p style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffffff; background:#fa6b4b; border-radius:4px; top:450px; left:500px;" class="ls-l" data-ls="offsetxin:80; durationin:1500; delayin:5400; rotatein:20; rotatexin:30; scalexin:1.5; scaleyin:1.5; transformoriginin:left 50% 0; offsetxout:-80; durationout:750; rotateout:20; rotatexout:-30; scalexout:0; scaleyout:0; transformoriginout:left 50% 0; parallaxlevel:0;">INTERFACE REVAMP</p>
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; color:#333; top:490px; left:499px;" class="ls-l" data-ls="durationin:1500; delayin:5800; rotateyin:90; skewxin:60; transformoriginin:25% 50% 0; offsetxout:100; durationout:750; skewxout:60; parallaxlevel:0;">working with the plugin is more easy</p>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:9500; transition2d:5; timeshift:-3000; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/bg4.jpg" class="ls-bg" alt="" />
+			<p style="opacity: .3; font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:200px; color:#ffffff; top:-17px; left:915px;" class="ls-l" data-ls="durationin:2000; delayin:1000; easingin:linear; scalexin:0; scaleyin:0; durationout:2000; startatout:transitioninend + 1; easingout:linear; scalexout:2; scaleyout:2; parallaxlevel:0;">&amp;</p>
+			<h1 style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:40px; color:#ffffff; top:60px; left:800px;" class="ls-l" data-ls="offsetxin:50; durationin:3000; rotateyin:60; transformoriginin:right 50% 0; offsetxout:-50; durationout:3000; startatout:transitioninend + 400; rotateyout:-60; transformoriginout:left 50% 0; parallaxlevel:0;">
+				RESPONSIVE
+			</h1>
+			<h2 style="font-weight: 500;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#286e89; top:100px; left:801px;" class="ls-l" data-ls="offsetxin:-50; durationin:3000; delayin:500; rotateyin:-60; transformoriginin:left 50% 0; offsetxout:50; durationout:3000; startatout:transitioninend + 1; rotateyout:60; transformoriginout:right 50% 0; parallaxlevel:0;">
+				mobile ready
+			</h2>
+			<h1 style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, HelveticaNeue-UltraLight, HelveticaNeue-Light, HelveticaNeue, Helvetica, Arial, serif; font-size:30px; line-height:37px; color:#ffffff; background:#29768f; border-radius:4px; top:497px; left:788px;" class="ls-l" data-ls="durationin:4000; delayin:2000; rotateyin:450; transformoriginin:right 50% 0; durationout:500; startatout:transitioninend + 1; easingout:easeInBack; rotateyout:-90; transformoriginout:right 50% 0; parallaxlevel:0;">
+				VERSION
+			</h1>
+			<h3 style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:400px; color:#ffffff; top:220px; left:912px;" class="ls-l" data-ls="durationin:4000; delayin:2000; rotateyin:450; transformoriginin:left 50% 0; durationout:500; startatout:transitioninend + 1; easingout:easeInBack; rotateyout:90; transformoriginout:left 50% 0; parallaxlevel:0;">
+				5
+			</h3>
+			<h1 style="font-weight: 300; text-align: right;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#ffffff; top:461px; left:767px;" class="ls-l" data-ls="durationin:3500; delayin:6500; easingin:easeOutElastic; rotateyin:-90; transformoriginin:right 50% 0; durationout:500; rotateyout:-90; transformoriginout:right 50% 0; parallaxlevel:0;">
+				<span style="color: #286e89;">WITH HUGE</span>
+				<br>
+				AND
+			</h1>
+			<h3 style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#ffffff; top:461px; left:943px;" class="ls-l" data-ls="durationin:3500; delayin:6500; easingin:easeOutElastic; rotateyin:90; transformoriginin:left 50% 0; durationout:500; rotateyout:90; transformoriginout:left 50% 0; parallaxlevel:0;">
+				<span style="color: #286e89;">PERFORMANCE</span>
+				<br>
+				FEATURE UPDATE
+			</h3>
+			<img width="875" height="628" src="images/slide-a-1.png" class="ls-l" alt="" style="width:765px; top:180px; left:-82px;" data-ls="offsetyin:100; durationin:2000; delayin:1000; offsetxout:-100; offsetyout:50; durationout:2000; startatout:transitioninend + 2010; parallaxlevel:0;">
+			<img width="426" height="55" src="images/slide-a-2.png" class="ls-l" alt="" style="top:495px; left:135px;" data-ls="offsetyin:100; durationin:2000; delayin:1000; offsetxout:-100; offsetyout:50; durationout:2000; startatout:transitioninend + 2010; parallaxlevel:0;">
+			<img width="459" height="260" src="images/slide-a-3.png" class="ls-l" alt="" style="top:275px; left:135px;" data-ls="offsetyin:100; durationin:2000; delayin:1000; durationout:1500; startatout:transitioninend + 500; scalexout:1.2; scaleyout:1.2; parallaxlevel:0;">
+			<img width="459" height="260" src="images/slide-a-4.png" class="ls-l" alt="" style="top:275px; left:135px;" data-ls="durationin:1500; delayin:3500; scalexin:1.5; scaleyin:1.5; offsetxout:-100; offsetyout:50; durationout:2000; startatout:transitioninend + 1; parallaxlevel:0;">
+			<img width="33" height="33" src="images/slide-a-6.png" class="ls-l" alt="" style="top:476px; left:436px;" data-ls="durationin:1; delayin:3498; durationout:750; startatout:transitioninend + 1; easingout:easeOutSine; scalexout:10; scaleyout:10; parallaxlevel:0;">
+			<img width="311" height="354" src="images/slide-a-5.png" class="ls-l" alt="" style="top:475px; left:383px;" data-ls="offsetyin:bottom; delayin:2500; offsetyout:bottom; startatout:transitioninend + 1; parallaxlevel:0;">
+			<div style="width:10px; height:400px; background:#29768f; border-radius:2px; top:180px; left:610px;" class="ls-l" data-ls="durationin:2000; delayin:6000; scaleyin:0; transformoriginin:50% bottom 0; durationout:500; scaleyout:0; transformoriginout:50% bottom 0; parallaxlevel:0;"></div>
+			<div style="opacity: .5;width:10px; height:50px; background:#ffffff; border-radius:2px; top:530px; left:590px;" class="ls-l" data-ls="durationin:2000; delayin:6000; scaleyin:0; transformoriginin:50% bottom 0; durationout:500; scaleyout:0; transformoriginout:50% bottom 0; parallaxlevel:0;"></div>
+			<p style="font-style: italic; text-align: center; font-weight: 500; opacity: .75;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; line-height:25px; color:#ffffff; top:589px; left:533px;" class="ls-l" data-ls="delayin:6500; scalexin:2; scaleyin:2; durationout:500; scalexout:2; scaleyout:2; parallaxlevel:0;">
+				8x
+				<br>
+				performance
+			</p>
+			<div style="width:10px; height:200px; background:#29768f; border-radius:2px; top:380px; left:410px;" class="ls-l" data-ls="durationin:2000; delayin:6500; scaleyin:0; transformoriginin:50% bottom 0; durationout:500; scaleyout:0; transformoriginout:50% bottom 0; parallaxlevel:0;"></div>
+			<div style="opacity: .5;width:10px; height:50px; background:#ffffff; border-radius:2px; top:530px; left:390px;" class="ls-l" data-ls="durationin:2000; delayin:6500; scaleyin:0; transformoriginin:50% bottom 0; durationout:500; scaleyout:0; transformoriginout:50% bottom 0; parallaxlevel:0;"></div>
+			<p style="font-style: italic; text-align: center; font-weight: 500; opacity: .75;font-family:Lato, 'Open Sans', sans-serif; font-size:24px; line-height:25px; color:#ffffff; top:589px; left:349px;" class="ls-l" data-ls="delayin:7000; scalexin:2; scaleyin:2; durationout:500; scalexout:2; scaleyout:2; parallaxlevel:0;">
+				many new
+				<br>
+				features
+			</p>
+			<img width="80" height="80" src="images/feature-responsive.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:520px; left:200px;" data-ls="offsetxin:-50; delayin:6500; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-layers.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:450px; left:200px;" data-ls="offsetxin:-50; delayin:6700; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-mobile.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:380px; left:200px;" data-ls="offsetxin:-50; delayin:6900; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-options.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:310px; left:200px;" data-ls="offsetxin:-50; delayin:7100; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-performance.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:240px; left:200px;" data-ls="offsetxin:-50; delayin:7300; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-slideshow.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:170px; left:200px;" data-ls="offsetxin:-50; delayin:7500; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-youtube.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:520px; left:130px;" data-ls="offsetxin:-50; delayin:7000; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="81" src="images/feature-vimeo.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:450px; left:130px;" data-ls="offsetxin:-50; delayin:7200; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-html5.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:380px; left:130px;" data-ls="offsetxin:-50; delayin:7400; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="81" src="images/feature-ios.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:310px; left:130px;" data-ls="offsetxin:-50; delayin:7600; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="81" src="images/feature-android.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:240px; left:130px;" data-ls="offsetxin:-50; delayin:7800; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+			<img width="80" height="80" src="images/feature-wordpress.png" class="ls-l" alt="" style="opacity: .75;width:60px; top:170px; left:130px;" data-ls="offsetxin:-50; delayin:8000; rotatein:90; scalexin:3; scaleyin:3; transformoriginin:25% 25% 0; offsetxout:-50; durationout:400; rotateout:90; scalexout:.5; scaleyout:.5; parallaxlevel:0;">
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:8000; transition2d:4; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/slide-b-bg.jpg" class="ls-bg" alt="" />
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#ffffff; top:44%; left:50%;" class="ls-l" data-ls="offsetxin:50; durationin:750; easingin:easeOutBack; skewxin:-50; offsetxout:-50; durationout:600; startatout:transitioninend + 500; easingout:easeInBack; skewxout:50; parallaxlevel:0;">introducing</p>
+			<p style="font-weight: 300;font-family:Lato, 'Open Sans', sans-serif; font-size:50px; color:#ffffff; top:50%; left:50%;" class="ls-l" data-ls="offsetxin:-100; durationin:750; delayin:250; easingin:easeOutBack; skewxin:-50; offsetxout:100; durationout:600; startatout:transitioninend + 500; easingout:easeInBack; skewxout:50; parallaxlevel:0;">PARALLAX LAYERS</p>
+			<img width="1510" height="1208" src="images/slide-b-1.png" class="ls-l" alt="" style="width:120%; height:auto; top:30%; left:50%;" data-ls="offsetxin:-100; durationin:2000; delayin:1500; offsetxout:-100; parallax:true; parallaxlevel:-2;">
+			<img width="1126" height="549" src="images/slide-b-2.png" class="ls-l" alt="" style="top:353px; left:237px;" data-ls="offsetxin:50; durationin:2000; delayin:1500; offsetxout:50; parallax:true; parallaxlevel:1;">
+			<img width="729" height="476" src="images/slide-b-3.png" class="ls-l" alt="" style="top:453px; left:483px;" data-ls="offsetxin:100; durationin:2000; delayin:1500; offsetxout:100; parallax:true; parallaxlevel:3;">
+			<img width="533" height="455" src="images/slide-b-4.png" class="ls-l" alt="" style="top:456px; left:586px;" data-ls="offsetxin:150; durationin:2000; delayin:1500; offsetxout:150; parallax:true; parallaxlevel:5;">
+			<img width="369" height="442" src="images/slide-b-5.png" class="ls-l" alt="" style="top:421px; left:659px;" data-ls="offsetxin:200; durationin:2000; delayin:1500; offsetxout:200; parallax:true; parallaxlevel:7;">
+			<p style="font-weight: 500;font-family:Lato, 'Open Sans', sans-serif; font-size:35px; color:#ffffff; top:47%; left:690px;" class="ls-l" data-ls="durationin:1500; delayin:1500; rotateyin:90; transformoriginin:left 50% 0; durationout:1500; startatout:transitioninend + 1000; rotateyout:-90; transformoriginout:left 50% 0; parallaxlevel:0;">
+				Move your mouse
+				<br>
+				over this slide!
+			</p>
+			<img width="70" height="163" src="images/mouse.png" class="ls-l" alt="" style="top:45%; left:585px;" data-ls="durationin:1500; delayin:1500; rotateyin:90; transformoriginin:right 50% 0; durationout:1500; startatout:transitioninend + 1000; rotateyout:-90; transformoriginout:right 50% 0; parallaxlevel:0;">
+			<p style="font-weight: 300;height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#849e00; background:#ffffff; border-radius:4px; top:560px; left:50px;" class="ls-l" data-ls="durationin:2000; delayin:3500; rotatein:-45; rotateyin:-1; scalexin:.5; scaleyin:.5; transformoriginin:left bottom 0; rotateout:45; scalexout:2; scaleyout:2; transformoriginout:right bottom 0; parallaxlevel:0;">FANCY PARALLAX EFFECT</p>
+			<p style="font-weight: 500;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#ffffff; top:600px; left:50px;" class="ls-l" data-ls="durationin:2000; delayin:3500; rotatein:-45; scalexin:2; scaleyin:2; transformoriginin:right top 0; rotateout:45; scalexout:2; scaleyout:2; transformoriginout:left top 0; parallaxlevel:0;">by mouse move</p>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:5500; transition2d:11; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/bg51.jpg" class="ls-bg" alt="" />
+			<img width="1280" height="720" src="images/bg31.jpg" class="ls-l" alt="" style="top:0px; left:0px;" data-ls="durationin:2000; scalexin:1.1; scaleyin:1.1; durationout:400; parallaxlevel:0;">
+			<p style="font-weight: 300; background: white; background: rgba(255,255,255,.2);height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffe9db; top:50%; left:50%;" class="ls-l" data-ls="rotatexin:-70; scalexin:3; scaleyin:3; startatout:transitioninend + 500; rotatexout:70; scalexout:.5; scaleyout:.5; parallaxlevel:0;">embedding videos?</p>
+			<div style="background: white; background: rgba(255,255,255,.2); box-shadow: 0px 5px 70px -20px black;width:660px; height:380px; top:100px; left:50%;" class="ls-l" data-ls="durationin:2000; delayin:1500; easingin:easeInOutExpo; rotatexin:20; scalexin:.8; scaleyin:.8; transformoriginin:50% 50% -150; rotatexout:-20; scalexout:.8; scaleyout:.8; transformoriginout:50% 50% -150; parallaxlevel:0;"></div>
+			<div style="top:110px; left:50%;" class="ls-l" data-ls="durationin:2000; delayin:1500; easingin:easeInOutExpo; rotatexin:20; scalexin:.8; scaleyin:.8; transformoriginin:50% 50% -150; rotatexout:-20; scalexout:.8; scaleyout:.8; transformoriginout:50% 50% -150; parallaxlevel:0;">
+				<iframe width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-src="//player.vimeo.com/video/15069551?title=0&amp;byline=0&amp;portrait=0&amp;color=f75402"></iframe>
+			</div>
+			<img width="90" height="90" src="images/youtube-color.png" class="ls-l" alt="" style="top:80%; left:35%;" data-ls="offsetxin:-100; delayin:2500; easingin:easeInOutCubic; rotatein:-180; offsetxout:300; easingout:easeInOutCubic; rotateout:360; parallaxlevel:0;">
+			<img width="90" height="90" src="images/vimeo-color.png" class="ls-l" alt="" style="top:80%; left:50%;" data-ls="offsetxin:-200; delayin:2550; easingin:easeInOutCubic; rotatein:-270; offsetxout:200; easingout:easeInOutCubic; rotateout:270; parallaxlevel:0;">
+			<img width="90" height="90" src="images/html5-color.png" class="ls-l" alt="" style="top:80%; left:65%;" data-ls="offsetxin:-300; delayin:2600; easingin:easeInOutCubic; rotatein:-360; offsetxout:100; easingout:easeInOutCubic; rotateout:180; parallaxlevel:0;">
+			<p style="opacity: .75;font-family:Lato, 'Open Sans', sans-serif; font-size:15px; color:#ffdcc7; top:630px; left:35%;" class="ls-l" data-ls="durationin:500; delayin:3300; easingin:easeOutBack; scalexin:0; scaleyin:0; durationout:500; scalexout:4; scaleyout:4; parallaxlevel:0;">video</p>
+			<p style="opacity: .75;font-family:Lato, 'Open Sans', sans-serif; font-size:15px; color:#ffdcc7; top:630px; left:50%;" class="ls-l" data-ls="durationin:500; delayin:3350; easingin:easeOutBack; scalexin:0; scaleyin:0; durationout:500; scalexout:4; scaleyout:4; parallaxlevel:0;">video</p>
+			<p style="opacity: .75;font-family:Lato, 'Open Sans', sans-serif; font-size:15px; color:#ffdcc7; top:630px; left:65%;" class="ls-l" data-ls="durationin:500; delayin:3400; easingin:easeOutBack; scalexin:0; scaleyin:0; durationout:500; scalexout:4; scaleyout:4; parallaxlevel:0;">video + audio</p>
+			<p style="font-weight: 300; background: black; background: rgba(0,0,0,.2);height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffe9db; top:30px; left:30px;" class="ls-l" data-ls="offsetxin:150; delayin:3000; skewxin:-60; offsetxout:-150; durationout:400; skewxout:60; parallaxlevel:0;">RICH MEDIA SUPPORT </p>
+			<p style="font-weight: 300; background: black; background: rgba(0,0,0,.2);height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffe9db; top:30px; left:835px;" class="ls-l" data-ls="offsetxin:-150; delayin:3000; skewxin:60; offsetxout:150; durationout:400; skewxout:-60; parallaxlevel:0;">WITH OPTIONAL AUTOPLAY</p>
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:8000; transition2d:21,105; timeshift:-1000; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/bg6b.jpg" class="ls-bg" alt="" />
+			<img width="423" height="422" src="images/circle.png" class="ls-l" alt="" style="top:155px; left:50%;" data-ls="durationin:1500; delayin:3000; easingin:linear; scalexin:0; scaleyin:0; durationout:1500; startatout:transitioninend + 1; easingout:linear; scalexout:2; scaleyout:2; parallaxlevel:0;">
+			<img width="423" height="422" src="images/circle.png" class="ls-l" alt="" style="top:155px; left:50%;" data-ls="durationin:1500; delayin:4000; easingin:linear; scalexin:0; scaleyin:0; durationout:1500; startatout:transitioninend + 1; easingout:linear; scalexout:2; scaleyout:2; parallaxlevel:0;">
+			<p style="font-weight: 300; opacity: .4;font-family:Lato, 'Open Sans', sans-serif; font-size:200px; color:#f06a52; top:334px; left:56px;" class="ls-l" data-ls="durationin:2500; delayin:1000; scalexin:0; scaleyin:0; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;">&amp;</p>
+			<p style="font-weight: 300; background: white; background: rgba(255,255,255,.85);height:40px; padding-right:10px; padding-left:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#bd5949; top:420px; left:20px;" class="ls-l" data-ls="offsetxin:-50; durationin:2000; delayin:1000; offsetxout:-50; parallaxlevel:0;">ALL THESE FEATURES</p>
+			<p style="font-weight: 500;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#bd5949; top:460px; left:173px;" class="ls-l" data-ls="offsetxin:50; delayin:2000; skewxin:-60; offsetxout:-50; skewxout:-60; parallaxlevel:0;">much more!</p>
+			<p style="font-weight: 500; text-align: right;font-family:Lato, 'Open Sans', sans-serif; font-size:30px; color:#bd5949; top:420px; left:1113px;" class="ls-l" data-ls="delayin:2500; rotatein:90; transformoriginin:right bottom 0; durationout:1500; transformoriginout:right bottom 0; parallaxlevel:0;">...to create</p>
+			<p style="font-weight: 300; text-align: right;width:260px; height:40px; padding-right:10px; font-family:Lato, 'Open Sans', sans-serif; font-size:30px; line-height:37px; color:#ffffff; background:#f06a52; top:460px; left:990px;" class="ls-l" data-ls="durationin:2500; delayin:3250; easingin:easeOutElastic; rotatexin:90; transformoriginin:50% top 0; rotatexout:90; transformoriginout:50% bottom 0; parallaxlevel:0;">THE BEST SLIDER</p>
+			<p style="font-family:'Indie Flower'; font-size:30px; color:#d9482b; top:505px; left:983px;" class="ls-l" data-ls="offsetxin:-50; delayin:3500; skewxin:60; scalexin:1.5; offsetxout:-50; skewxout:60; scalexout:1.5; parallaxlevel:0;">with no compromises!</p>
+			<img width="254" height="452" src="images/ls5box.png" class="ls-l" alt="" style="top:180px; left:50%;" data-ls="offsetxin:80; durationin:1500; scalexin:.8; scaleyin:.8; offsetxout:-80; durationout:400; scalexout:.8; scaleyout:.8; parallaxlevel:0;">
+			<p style="font-family:'Indie Flower'; font-size:24px; color:#9c8b9c; top:28px; left:50%;" class="ls-l" data-ls="delayin:4000; scalexin:.8; scaleyin:.8; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;">Please check the other demo sliders</p>
+			<img width="46" height="41" src="images/arrow-up.png" class="ls-l" alt="" style="top:9px; left:837px;" data-ls="delayin:4200; scalexin:.5; scaleyin:.5; durationout:400; scalexout:0; scaleyout:0; parallaxlevel:0;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				responsiveUnder: 0,
+				layersContainer: 0,
+				skin: 'v5',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vintage Clock | shows valid time</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,700">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:968px;height:100vh;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2; parallaxtype:3d; parallaxrotate:-10;">
+			<img width="2000" height="1170" src="images/clock-bg.jpg" class="ls-bg" alt="" />
+			<p style="top:60px; left:18px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; font-family:'Libre Baskerville'; color:#ff3d1f; font-size:40px; background:rgba(0,0,0,.5);; padding-right:10px; padding-left:10px;" class="ls-l" data-ls="showinfo:1; offsetxin:-100lw; fadein:false; clipin:0 0 0 100%; startatout:slidechangeonly + 0;">TIME</p>
+			<p style="text-shadow: 0 2px 7px black;top:18px; left:18px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; font-family:'Libre Baskerville'; color:#fbffd1; padding-right:10px; padding-left:10px; font-size:32px;" class="ls-l" data-ls="showinfo:1; offsetxin:100lw; fadein:false; clipin:0 100% 0 0; startatout:slidechangeonly + 0;">current</p>
+			<img width="968" height="968" src="images/clock.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; overlay:null; durationin:2000; rotatein:-5; scalexin:.98; scaleyin:.98; rotateout:-5;">
+			<img width="968" height="968" src="images/hours.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" id="hours" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:86400000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1;">
+			<img width="968" height="968" src="images/minutes.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" id="minutes" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:3600000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1;">
+			<img width="968" height="968" src="images/seconds.png" class="ls-l seconds" alt="" style="margin-top: 5px; margin-left: -5px;top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:.5; filter:blur(3px) saturate(0%) brightness(0%);;" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:60000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1;">
+			<img width="968" height="968" src="images/seconds.png" class="ls-l seconds" alt="" style="top:0px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:60000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1;">
+			<img width="22" height="22" src="images/clock-center.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; overlay:null; scalexin:.98; scaleyin:.98;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$("#slider").on('sliderDidLoad', function( event, slider ) {
+				var	d = new Date(),
+					rotateHours,
+					rotateMinutes,
+					rotateSeconds,
+					curHours = d.getHours(),
+					curMinutes = d.getMinutes(),
+					curSeconds = d.getSeconds();
+				
+				if( curHours >= 12 ){ curHours -= 12; }
+			
+				rotateSeconds = 360 / 60 * curSeconds;
+				rotateMinutes = 360 / 60 * curMinutes + 6 * rotateSeconds / 360;
+				rotateHours = 360 / 12 * curHours + 30 * rotateMinutes / 360;
+			
+				jQuery( '#hours' ).attr( 'data-ls', jQuery( '#hours' ).attr( 'data-ls') + 'rotate: ' + rotateHours );
+				jQuery( '#minutes' ).attr( 'data-ls', jQuery( '#minutes' ).attr( 'data-ls') + 'rotate: ' + rotateMinutes );
+				jQuery( '.seconds' ).attr( 'data-ls', jQuery( '.seconds' ).first().attr( 'data-ls') + 'rotate: ' + rotateSeconds );
+				
+				TweenMax.ticker.useRAF(false);
+				TweenMax.lagSmoothing(0);
+			
+			});
+
+
+			$('#slider').layerSlider({
+				sliderVersion: '6.1.0',
+				type: 'fullsize',
+				skin: 'v6',
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/',
+				height: 968
+			});
+		});
+
+	</script>
+</body>
+</html>

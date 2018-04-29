@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:750px;height:500px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:4000; kenburnsscale:1.2;">
+			<img width="750" height="500" src="images/1.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:4000;">
+			<img width="750" height="500" src="images/2.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:4000;">
+			<img width="750" height="500" src="images/3.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:4000; deeplink:leopard;">
+			<img width="750" height="500" src="images/4.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:4000;">
+			<img width="750" height="500" src="images/5.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 6-->
+		<div class="ls-slide" data-ls="duration:4000;">
+			<img width="750" height="500" src="images/6.jpg" class="ls-bg" alt="" />
+		</div>
+		
+		
+		<!-- Slide 7-->
+		<div class="ls-slide" data-ls="duration:4000;">
+			<img width="750" height="500" src="images/7.jpg" class="ls-bg" alt="" />
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				responsiveUnder: 0,
+				layersContainer: 0,
+				slideBGSize: 'auto',
+				skin: 'v5',
+				thumbnailNavigation: 'always',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

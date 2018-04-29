@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Popup Inforbar Demo</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/popup/layerslider.popup.css">
+	<script src="../../layerslider/plugins/popup/layerslider.popup.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div class="ls-popup">
+		<div id="slider" style="width:800px;height:200px;margin:0 auto;margin-bottom: 0px;">
+			
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgcolor:#92c934; kenburnsscale:1.2;">
+				<p style="top:10px; left:10px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; mix-blend-mode:normal; font-family:Poppins; color:#315700; font-size:100px; line-height:100px; height:100px;" class="ls-l" data-ls="showinfo:1; offsetyin:top;">Layer</p>
+				<p style="text-shadow: 0 3px 20px #315700;top:90px; left:10px; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; mix-blend-mode:normal; font-family:Poppins; color:#ffffff; line-height:100px; height:100px; font-size:120px;" class="ls-l" data-ls="showinfo:1; offsetyin:bottom; delayin:300;">Slider</p>
+				<p style="top:55px; left:327px; text-align:initial; font-weight:500; font-style:italic; text-decoration:none; mix-blend-mode:normal; font-family:Poppins; font-size:30px; color:#315700;" class="ls-l" data-ls="showinfo:1; transitionin:false; texttransitionin:true; texttypein:words_rand; textshiftin:100; textoffsetyin:random(-30,30); textdurationin:1500; texteasingin:easeOutElastic; textstartatin:transitioninend + 1200; textrotatein:random(-15,15);">with amazing Popup feature!</p>
+				<a style="" class="ls-l" href="http://codecanyon.net/cart/add_items?ref=kreatura&amp;item_ids=1362246" target="_blank" data-ls="showinfo:1; offsetxin:-100lw; durationin:1500; delayin:2000; easingin:easeOutBack; skewxin:15; hover:true; hoverdurationin:300; hoverskewx:15; skewX:-15;">
+					<p style="box-shadow: 0 3px 20px #315700;top:118px; left:564px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; background:#ffffff; padding-right:20px; padding-left:20px; font-size:30px; font-family:Poppins; border-radius:5px; line-height:24px; padding-top:20px; padding-bottom:15px; color:#315700;" class="">BUY NOW!</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.0b2',
+				type: 'popup',
+				autoStart: false,
+				startInViewport: false,
+				pauseOnHover: 'disabled',
+				keybNav: false,
+				touchNav: false,
+				forceCycles: false,
+				skin: 'noskin',
+				globalBGSize: 'cover',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				popupShowOnTimeout: 1,
+				popupShowOnce: false,
+				popupDisableOverlay: true,
+				popupCloseButtonStyle: 'top: 100%; background: #93cd55; border: 0; border-top-left-radius: 0; border-top-right-radius: 0; opacity: 1; left: 50%; margin-left: -14px;',
+				popupResetOnClose: 'disabled',
+				popupFitWidth: true,
+				popupPositionVertical: 'top',
+				popupDistanceLeft: 0,
+				popupDistanceRight: 0,
+				popupDistanceTop: 0,
+				popupDistanceBottom: 0,
+				popupTransitionIn: 'slidefromtop',
+				popupTransitionOut: 'slidetotop',
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["popup"]
+			});
+		});
+
+	</script>
+</body>
+</html>

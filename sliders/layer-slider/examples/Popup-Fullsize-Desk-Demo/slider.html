@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Popup Fullsize Desk Demo</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Holtwood+One+SC:regular">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/popup/layerslider.popup.css">
+	<script src="../../layerslider/plugins/popup/layerslider.popup.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div class="ls-popup">
+		<div id="slider" style="width:1000px;height:750px;margin:0 auto;margin-bottom: 0px;">
+			
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2; parallaxtype:3d;">
+				<img width="2000" height="1500" src="images/bg.jpg" class="ls-bg" alt="" />
+				<img width="756" height="1187" src="images/watch.png" class="ls-l" alt="" style="top:86px; left:727px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:427px; height:671px;" data-ls="showinfo:1; offsetxin:400; offsetyin:400; durationin:1500; easingin:easeOutQuint; rotatein:5;">
+				<img width="987" height="731" src="images/box1.png" class="ls-l" alt="" style="top:-105px; left:-222px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:568px; height:421px;" data-ls="showinfo:1; offsetxin:-100; offsetyin:-150; durationin:1500; delayin:900; easingin:easeOutQuint; rotatein:5;">
+				<img width="572" height="732" src="images/tape.png" class="ls-l" alt="" style="top:-67px; left:763px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:324px; height:414px;" data-ls="showinfo:1; offsetxin:400; offsetyin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; rotatein:90;">
+				<img width="832" height="670" src="images/envelope1.png" class="ls-l" alt="" style="top:562px; left:542px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:452px; height:364px;" data-ls="showinfo:1; offsetxin:300; offsetyin:200; durationin:1500; delayin:400; easingin:easeOutQuint; rotatein:-3;">
+				<img width="973" height="643" src="images/envelope2.png" class="ls-l" alt="" style="top:653px; left:350px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:554px; height:366px;" data-ls="showinfo:1; offsetxin:300; offsetyin:200; durationin:1500; delayin:600; easingin:easeOutQuint; rotatein:-10;">
+				<img width="642" height="646" src="images/box2.png" class="ls-l" alt="" style="top:653px; left:218px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:324px; height:326px;" data-ls="showinfo:1; offsetxin:-200; offsetyin:200; durationin:1500; delayin:800; easingin:easeOutQuint; rotatein:-40;">
+				<img width="1181" height="1208" src="images/folder.png" class="ls-l" alt="" style="top:455px; left:-193px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:492px; height:504px;" data-ls="showinfo:1; offsetxin:-100; offsetyin:200; durationin:1500; delayin:1000; easingin:easeOutQuint; rotatein:5;">
+				<img width="1213" height="1418" src="images/box3.png" class="ls-l" alt="" style="top:-211px; left:175px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:595px; height:695px;" data-ls="showinfo:1; offsetyin:-250; durationin:1500; delayin:600; easingin:easeOutQuint; rotatein:-15;">
+				<img width="953" height="976" src="images/book.png" class="ls-l" alt="" style="top:188px; left:-364px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:582px; height:596px;" data-ls="showinfo:1; offsetxin:-200; offsetyin:300; durationin:1500; delayin:1200; easingin:easeOutQuint; rotatein:5;">
+				<img width="397" height="463" src="images/stamp.png" class="ls-l" alt="" style="top:262px; left:-10px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:183px; height:214px;" data-ls="showinfo:1; offsetxin:-200; offsetyin:300; durationin:1500; delayin:1200; easingin:easeOutQuint; rotatein:-200;">
+				<p style="top:390px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; font-family:'Holtwood One SC'; color:rgba(0,0,0,.5);; font-size:40px; opacity:.7; filter:blur(5px);" class="ls-l" data-ls="showinfo:1; durationin:750; delayin:1500; easingin:easeOutBack; parallax:true; parallaxlevel:2;">CLOSE ME</p>
+				<p style="cursor: pointer;top:380px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; font-family:'Holtwood One SC'; color:rgba(255, 255, 255, 0.99); font-size:38px; opacity:.7;" class="ls-l ls-close-popup" data-ls="showinfo:1; durationin:750; delayin:1500; easingin:easeOutBack; hover:true; hoveropacity:1; parallax:true; parallaxlevel:4;">CLOSE ME</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.0b2',
+				type: 'popup',
+				skin: 'noskin',
+				globalBGSize: 'cover',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				popupShowOnTimeout: 1,
+				popupShowOnce: false,
+				popupDisableOverlay: true,
+				popupShowCloseButton: false,
+				popupOverlayClickToClose: false,
+				popupFitWidth: true,
+				popupFitHeight: true,
+				popupDistanceLeft: 0,
+				popupDistanceRight: 0,
+				popupDistanceTop: 0,
+				popupDistanceBottom: 0,
+				popupDelayIn: 0,
+				popupTransitionIn: 'slidefrombottom',
+				popupTransitionOut: 'slidetobottom',
+				popupOverlayDurationIn: 4000,
+				popupOverlayTransitionIn: 'slidefrombottom',
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["popup"]
+			});
+		});
+
+	</script>
+</body>
+</html>

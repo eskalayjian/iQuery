@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Happy Halloween!</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marko+One:regular">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1920px;height:100vh;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2;">
+			<img width="1680" height="1050" src="images/halloween-bg-2.jpg" class="ls-bg" alt="" />
+			<img width="667" height="672" src="images/halloween-pumpkin.png" class="ls-l" alt="" style="top:103px; left:1160px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1;">
+			<img width="207" height="207" src="images/light-left-eye.png" class="ls-l" alt="" style="top:278px; left:1292px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; loop:true; loopduration:1250; loopeasing:easeInOutSine; loopopacity:.5; loopcount:-1; loopyoyo:true;">
+			<img width="200" height="200" src="images/light-right-eye.png" class="ls-l" alt="" style="top:285px; left:1499px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; loop:true; loopduration:1150; loopstartat:allinend + 0; loopeasing:easeInOutSine; loopopacity:.5; loopcount:-1; loopyoyo:true;">
+			<img width="158" height="154" src="images/light-nose.png" class="ls-l" alt="" style="top:394px; left:1426px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; loop:true; loopeasing:easeInOutSine; loopopacity:.5; loopcount:-1; loopyoyo:true;">
+			<img width="502" height="247" src="images/light-mouth.png" class="ls-l" alt="" style="top:433px; left:1252px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; loop:true; loopduration:1200; loopeasing:easeInOutSine; loopopacity:.5; loopcount:-1; loopyoyo:true;">
+			<p style="text-shadow: 5px -5px 0px #b33f00, 0px 10px 100px black;top:426px; left:101px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-family:'Marko One'; font-size:260px; color:#ff7a33;" class="ls-l" data-ls="showinfo:1; durationin:1; texttransitionin:true; texttypein:chars_rand; textshiftin:150; textdurationin:2000; texteasingin:easeOutElastic; textrotatein:random(-360,360); loop:true; loopduration:600; loopstartat:allinend - 1600; loopeasing:easeInOutSine; loopscaley:.9; looptransformorigin:54.2% 98.5% 0; loopcount:-1; loopyoyo:true; rotationY:-15;">HAPPY</p>
+			<p style="text-shadow: -5px 5px 0px #b33f00, 0px 10px 100px black;top:704px; left:391px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-family:'Marko One'; font-size:200px; color:#ff7a33;" class="ls-l" data-ls="showinfo:1; durationin:1; texttransitionin:true; texttypein:chars_rand; textshiftin:150; textdurationin:2000; texteasingin:easeOutElastic; textrotatein:random(-360,360); loop:true; loopduration:600; loopstartat:allinend - 2000; loopeasing:easeInOutSine; loopscaley:.9; looptransformorigin:54.2% 98.5% 0; loopcount:-1; loopyoyo:true; rotationY:10;">HALLOWEEN!</p>
+			<img width="667" height="672" src="images/halloween-pumpkin.png" class="ls-l" alt="" style="top:649px; left:784px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:115px; height:115px;" data-ls="showinfo:1; offsetxin:50; offsetyin:-200; durationin:500; delayin:1900; easingin:easeInOutQuad; rotatein:30; scaleyin:1.1; loop:true; loopoffsety:-80; loopduration:600; loopeasing:easeOutCubic; loopscaley:1.1; loopcount:-1; loopyoyo:true;">
+			<img width="667" height="672" src="images/halloween-pumpkin.png" class="ls-l" alt="" style="top:352px; left:488px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:158px; height:159px;" data-ls="showinfo:1; offsetxin:-50; offsetyin:-200; durationin:500; delayin:1500; easingin:easeInOutQuad; rotatein:-30; scaleyin:1.1; loop:true; loopoffsety:-100; loopduration:600; loopeasing:easeOutCubic; loopscaley:1.1; loopcount:-1; loopyoyo:true;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.2',
+				type: 'fullsize',
+				skin: 'v6',
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/',
+				height: 1080
+			});
+		});
+
+	</script>
+</body>
+</html>

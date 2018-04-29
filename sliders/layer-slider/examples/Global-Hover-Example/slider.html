@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Global Hover Example</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,regular,200,600">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:800px;height:100vh;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="globalhover:true; overflow:true; kenburnsscale:1.2; parallaxtype:3d; parallaxdurationmove:500; parallaxdurationleave:500; parallaxrotate:50;">
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:red;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:2;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:green;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:4;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:blue;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:6;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:purple;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:8;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:yellow;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:10;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:orange;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:12;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:grey;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:14;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:red;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:16;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:green;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:18;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:blue;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:20;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:purple;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:22;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:yellow;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:24;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:orange;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:26;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:200px; height:200px; border-radius:10px; background:grey;" class="ls-l" data-ls="showinfo:1; hover:true; hoveroffsetx:random(-300,300); hoveroffsety:random(-300,300); hoverdurationin:1200; hoverdurationout:500; hovereasingin:easeOutBack; hovereasingout:easeOutQuint; hoveropacity:.5; hoverrotate:random(-180,180); hoverrotatex:random(45,-45); hoverscalex:random(0.5,1.5); hoverscaley:random(0.5,1.5); parallax:true; parallaxlevel:28;"></div>
+			<p style="top:15%; left:50%; text-align:initial; font-weight:300; font-style:normal; text-decoration:none; mix-blend-mode:normal; font-family:Nunito; font-size:40px; color:#444444;" class="ls-l" data-ls="showinfo:1; transitionin:false; texttransitionin:true; texttypein:chars_edge; textshiftin:20; hover:true; hoveroffsety:top; hoverdurationin:800; hovereasingin:easeOutQuint; hoverrotatex:30; position:fixed;">MOVE YOUR MOUSE OVER THIS SLIDER</p>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.4.0',
+				type: 'fullsize',
+				skin: 'v6',
+				globalBGColor: '#eeeeee',
+				globalBGSize: 'cover',
+				skinsPath: '../../layerslider/skins/',
+				height: 800
+			});
+		});
+
+	</script>
+</body>
+</html>

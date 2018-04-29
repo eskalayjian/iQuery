@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Interactive Slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700|Open+Sans:300,400|Montserrat:regular,700,900,100,200,300|Roboto+Slab:100,300,regular,700">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1350px;height:100vh;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:9000; transition2d:104; kenburnsscale:1.2; parallaxtype:3d;">
+			<img width="1" height="1" src="images/sample-bg.png" class="ls-bg" alt="" />
+			<img width="1008" height="656" src="images/world-map.png" class="ls-l ls-hide-phone" alt="" style="top:50%; left:50%;" data-ls="durationin:2000; easingin:easeOutQuint; scalexin:3; scaleyin:3; transformoriginin:50% 50% -500px; durationout:1500; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:10;">
+			<p style="text-align:center;font-family:Montserrat; font-size:60px; color:#17aed8; top:50%; left:50%;" class="ls-l ls-hide-phone" data-ls="durationin:1600; easingin:easeOutQuint; rotatein:360; offsetyout:400; durationout:700; startatout:allinend + 300; texttransitionin:true; texttypein:chars_asc; textoffsetxin:500|-380|450|-610; textoffsetyin:-470|250|-100|-300|500; textstartatin:transitioninstart + 0; textrotatein:random(-180,180);">Explore your world</p>
+			<div style="background: #1da1f3; background: -moz-linear-gradient(left, #1da1f3 0%, #13b8c2 100%); background: -webkit-linear-gradient(left, #1da1f3 0%,#13b8c2 100%); background: linear-gradient(to right, #1da1f3 0%,#13b8c2 100%);width:180px; height:5px; top:498px; left:10px;" class="ls-l ls-hide-phone" data-ls="durationin:800; delayin:5800; easingin:easeOutQuint; scalexin:0; transformoriginin:0% 50% 0; durationout:400; parallaxlevel:0;"></div>
+			<h5 style="overflow:hidden;font-family:Montserrat; font-size:33px; color:#1d2124; top:516px; left:10px; font-weight:700;" class="ls-l ls-hide-phone" data-ls="delayin:5800; easingin:easeOutQuint; rotatexin:90; transformoriginin:50% 80% 0; offsetxout:-80; durationout:400; texttransitionin:true; texttypein:chars_asc; textshiftin:30; textoffsetyin:-100%; texteasingin:easeOutQuint; textstartatin:transitioninstart + 0; texttransformoriginin:50% 80% 0; parallaxlevel:0;">
+				Interactive Slider
+			</h5>
+			<h5 style="font-weight:400;width:310px; font-family:Montserrat; font-size:14px; line-height:18px; color:#737374; top:569px; left:10px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="delayin:6300; offsetxout:-80; durationout:400; texttransitionin:true; texttypein:lines_asc; textshiftin:100; texteasingin:easeOutQuint; textstartatin:transitioninstart + 0; textrotatexin:90; texttransformoriginin:50% -100% 0;">
+				In this special slider you can navigate through slider links. Just click on an image in this map, and you will jump to the specified slide, with custom content.
+			</h5>
+			<div style="box-shadow: 0 2px 10px rgba(0,0,0,0.15);width:14px; height:14px; border-top:3px solid #fff; border-right:3px solid #fff; border-bottom:3px solid #fff; border-left:3px solid #fff; background:#17aed8; border-radius:50%; top:558px; left:700px;" class="ls-l ls-hide-phone" data-ls="durationin:800; delayin:2000; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; hover:true; hoveropacity:1; hoverscalex:1.2; hoverscaley:1.2; parallax:true; parallaxlevel:11;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#5" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:2500; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% 0% 0; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 0px 1px rgba(0,0,0,0.05); font-weight:400;width:233px; padding-top:119px; padding-bottom:15px; padding-left:15px; font-family:Montserrat; font-size:12px; line-height:18px; color:#5e5e5e; background:#ffffff; border-radius:3px; top:395px; left:622px;" class="">Meet a rally champion!</p>
+			</a>
+			<div style="width:0px; height:0px; border-top:7px solid #ffffff; border-right:8px solid transparent; border-bottom:0px solid transparent; border-left:8px solid transparent; top:547px; left:702px;" class="ls-l ls-hide-phone" data-ls="offsetyin:-100; durationin:800; delayin:2500; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% -155px 0; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#5" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:2500; easingin:easeOutBack; scaleyin:1.2; transformoriginin:50% 0% 0; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<img width="248" height="105" src="images/africal-rally-small.jpg" class="" alt="" style="border-radius:3px 3px 0px 0px; top:395px; left:622px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#5" target="_self" data-ls="offsetyin:-70; durationin:800; delayin:2500; easingin:easeOutBack; transformoriginin:50% 0% 0; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:13;">
+				<img width="49" height="49" src="images/read-more.png" class="" alt="" style="box-shadow: 0 4px 5px rgba(0,0,0,0.1);border-radius:50%; top:475px; left:811px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#5" target="_self" data-ls="offsetyin:-100%; durationin:500; delayin:2800; easingin:easeOutBack; offsetyout:-50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="font-weight:400;font-family:Montserrat; font-size:15px; line-height:18px; color:#ffffff; top:474px; left:638px;" class="">AFRICA</p>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#5" target="_self" data-ls="offsetxin:80; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<img width="1594" height="206" src="images/africa-rally-mobile.jpg" class="" alt="" style="height:25%; background:#17aed8; top:12.5%; left:50%;">
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#5" target="_self" data-ls="offsetxin:80; delayin:50; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<p style="text-shadow: 0 0 10px rgba(0,0,0,0.3);font-family:Montserrat; font-size:80px; line-height:80px; color:#ffffff; top:12.5%; left:50%; text-align:center;" class="">AFRICA</p>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#4" target="_self" data-ls="offsetxin:-80; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<img width="1795" height="232" src="images/europe-mobile.jpg" class="" alt="" style="width:auto; height:25%; top:37.5%; left:50%;">
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#4" target="_self" data-ls="offsetxin:-80; delayin:50; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<p style="text-align:center; text-shadow: 0 0 10px rgba(0,0,0,0.3);width:auto; font-family:Montserrat; font-size:80px; line-height:80px; color:#ffffff; top:37.5%; left:50%;" class="">EUROPE</p>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#3" target="_self" data-ls="offsetxin:80; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<img width="1857" height="240" src="images/asia-mobile.jpg" class="" alt="" style="width:auto; height:25%; top:62.5%; left:50%;">
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#3" target="_self" data-ls="offsetxin:80; delayin:50; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<p style="text-align:center; text-shadow: 0 0 10px rgba(0,0,0,0.3);font-family:Montserrat; font-size:80px; line-height:80px; color:#ffffff; top:62.5%; left:50%;" class="">ASIA</p>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#2" target="_self" data-ls="offsetxin:-80; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<img width="2700" height="349" src="images/america-mobile.jpg" class="" alt="" style="width:auto; height:25%; top:87.5%; left:50%;">
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#2" target="_self" data-ls="offsetxin:-80; delayin:50; offsetxout:-80; durationout:400; parallaxlevel:0; position:fixed;">
+				<p style="text-align:center; text-shadow: 0 0 10px rgba(0,0,0,0.3);width:auto; font-family:Montserrat; font-size:80px; line-height:80px; color:#ffffff; top:87.5%; left:50%;" class="">AMERICA</p>
+			</a>
+			<div style="box-shadow: 0 2px 10px rgba(0,0,0,0.15);width:14px; height:14px; border-top:3px solid #fff; border-right:3px solid #fff; border-bottom:3px solid #fff; border-left:3px solid #fff; background:#17aed8; border-radius:50%; top:376px; left:350px;" class="ls-l ls-hide-phone" data-ls="durationin:800; delayin:2800; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; hover:true; hoveropacity:1; hoverscalex:1.2; hoverscaley:1.2; parallax:true; parallaxlevel:11;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#2" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:3300; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% 0% 0; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 0px 1px rgba(0,0,0,0.05); font-weight:400;width:233px; padding-top:119px; padding-bottom:15px; padding-left:15px; font-family:Montserrat; font-size:12px; line-height:18px; color:#5e5e5e; background:#ffffff; border-radius:3px; top:207px; left:318px;" class="">Are you ready for the cliffs?</p>
+			</a>
+			<div style="width:0px; height:0px; border-top:7px solid #ffffff; border-right:8px solid transparent; border-bottom:0px solid transparent; border-left:8px solid transparent; top:359px; left:351px;" class="ls-l ls-hide-phone" data-ls="offsetyin:-100; durationin:800; delayin:3300; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% -155px 0; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#2" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:3300; easingin:easeOutBack; scaleyin:1.2; transformoriginin:50% 0% 0; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<img width="248" height="105" src="images/american-person-small.jpg" class="" alt="" style="border-radius:3px 3px 0px 0px; top:207px; left:318px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#2" target="_self" data-ls="offsetyin:-70; durationin:800; delayin:3300; easingin:easeOutBack; transformoriginin:50% 0% 0; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:13;">
+				<img width="49" height="49" src="images/read-more.png" class="" alt="" style="box-shadow: 0 4px 5px rgba(0,0,0,0.1);border-radius:50%; top:288px; left:505px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#2" target="_self" data-ls="offsetyin:-100%; durationin:500; delayin:3600; easingin:easeOutBack; offsetxout:150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="font-weight:400;font-family:Montserrat; font-size:15px; line-height:18px; color:#ffffff; top:286px; left:333px;" class="">AMERICA</p>
+			</a>
+			<div style="box-shadow: 0 2px 10px rgba(0,0,0,0.15);width:14px; height:14px; border-top:3px solid #fff; border-right:3px solid #fff; border-bottom:3px solid #fff; border-left:3px solid #fff; background:#17aed8; border-radius:50%; top:382px; left:929px;" class="ls-l ls-hide-phone" data-ls="durationin:800; delayin:3600; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; hover:true; hoveropacity:1; hoverscalex:1.2; hoverscaley:1.2; parallax:true; parallaxlevel:11;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#3" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:4100; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% 0% 0; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 0px 1px rgba(0,0,0,0.05); font-weight:400;width:233px; padding-top:119px; padding-bottom:15px; padding-left:15px; font-family:Montserrat; font-size:12px; line-height:18px; color:#5e5e5e; background:#ffffff; border-radius:3px; top:218px; left:917px;" class="">Visit the most majestic terraces</p>
+			</a>
+			<div style="width:0px; height:0px; border-top:7px solid #ffffff; border-right:8px solid transparent; border-bottom:0px solid transparent; border-left:8px solid transparent; top:370px; left:930px;" class="ls-l ls-hide-phone" data-ls="offsetyin:-100; durationin:800; delayin:4100; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% -155px 0; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#3" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:4100; easingin:easeOutBack; scaleyin:1.2; transformoriginin:50% 0% 0; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<img width="248" height="105" src="images/asia-small.jpg" class="" alt="" style="border-radius:3px 3px 0px 0px; top:218px; left:917px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#3" target="_self" data-ls="offsetyin:-70; durationin:800; delayin:4100; easingin:easeOutBack; transformoriginin:50% 0% 0; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:13;">
+				<img width="49" height="49" src="images/read-more.png" class="" alt="" style="box-shadow: 0 4px 5px rgba(0,0,0,0.1);border-radius:50%; top:297px; left:1110px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#3" target="_self" data-ls="offsetyin:-100%; durationin:500; delayin:4400; easingin:easeOutBack; offsetxout:-150; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="font-weight:400;font-family:Montserrat; font-size:15px; line-height:18px; color:#ffffff; top:298px; left:932px;" class="">ASIA</p>
+			</a>
+			<div style="box-shadow: 0 2px 10px rgba(0,0,0,0.15);width:14px; height:14px; border-top:3px solid #fff; border-right:3px solid #fff; border-bottom:3px solid #fff; border-left:3px solid #fff; background:#17aed8; border-radius:50%; top:321px; left:659px;" class="ls-l ls-hide-phone" data-ls="durationin:800; delayin:4400; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetyout:20; durationout:400; scalexout:0.5; scaleyout:0.5; hover:true; hoveropacity:1; hoverscalex:1.2; hoverscaley:1.2; parallax:true; parallaxlevel:11;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#4" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:4900; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% 0% 0; offsetyout:50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 0px 1px rgba(0,0,0,0.05); font-weight:400;width:233px; padding-top:119px; padding-bottom:15px; padding-left:15px; font-family:Montserrat; font-size:12px; line-height:18px; color:#5e5e5e; background:#ffffff; border-radius:3px; top:154px; left:617px;" class="">Spend a weekend in Monaco</p>
+			</a>
+			<div style="width:0px; height:0px; border-top:7px solid #ffffff; border-right:8px solid transparent; border-bottom:0px solid transparent; border-left:8px solid transparent; top:306px; left:661px;" class="ls-l ls-hide-phone" data-ls="offsetyin:-100; durationin:800; delayin:4900; easingin:easeOutBack; scaleyin:1.4; transformoriginin:50% -155px 0; offsetyout:50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#4" target="_self" data-ls="offsetyin:-100; durationin:800; delayin:4900; easingin:easeOutBack; scaleyin:1.2; transformoriginin:50% 0% 0; offsetyout:50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<img width="248" height="105" src="images/europe-small.jpg" class="" alt="" style="border-radius:3px 3px 0px 0px; top:154px; left:617px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#4" target="_self" data-ls="offsetyin:-70; durationin:800; delayin:4900; easingin:easeOutBack; transformoriginin:50% 0% 0; offsetyout:50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:13;">
+				<img width="49" height="49" src="images/read-more.png" class="" alt="" style="box-shadow: 0 4px 5px rgba(0,0,0,0.1);border-radius:50%; top:233px; left:807px;">
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#4" target="_self" data-ls="offsetyin:-100%; durationin:500; delayin:5200; easingin:easeOutBack; offsetyout:50; durationout:400; scalexout:0.5; scaleyout:0.5; parallax:true; parallaxlevel:12;">
+				<p style="font-weight:400;font-family:Montserrat; font-size:15px; line-height:18px; color:#ffffff; top:234px; left:632px;" class="">EUROPE</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="bgsize:cover; duration:4000; transition2d:104; kenburnsscale:1.2;">
+			<img width="2400" height="1548" src="images/american-person-jumping.jpg" class="ls-bg" alt="" />
+			<img width="248" height="105" src="images/small-gradient.png" class="ls-l" alt="" style="width:100%; height:100%; top:50%; left:50%;" data-ls="offsetyin:200px; durationout:400; parallaxlevel:0; position:fixed;">
+			<p style="letter-spacing:-2px;padding-bottom:40px; padding-left:40px; font-family:Montserrat; font-size:90px; line-height:120px; color:#ffffff; top:100%; left:0%;" class="ls-l" data-ls="offsetxout:-80; durationout:400; texttransitionin:true; texttypein:chars_asc; textoffsetyin:100; textstartatin:transitioninstart + 0; parallaxlevel:0; position:fixed;">Cliff challenge</p>
+			<p style="padding-bottom:5px; padding-left:50px; font-family:Open Sans; font-size:25px; line-height:60px; color:rgba(255, 255, 255, 0.8); top:100%; left:0%;" class="ls-l ls-hide-phone" data-ls="delayin:1200; durationout:400; texttransitionin:true; texttypein:words_asc; textoffsetyin:10; textstartatin:transitioninstart + 0; parallaxlevel:0; position:fixed;">Anything that gets your blood racing is probably worth doing</p>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="delayin:2500; rotatexin:90; offsetxout:80; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#2dc3f0; parallaxlevel:0; position:fixed;">
+				<div style="margin-left:-15px; margin-top:-15px;padding-top:0px; padding-right:25px; padding-bottom:0px; padding-left:25px; font-family:Montserrat; font-size:20px; line-height:60px; color:#ffffff; background:#17aed8; top:100%; left:100%;" class=" ls-hide-phone">BACK TO MAP</div>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#1" target="_self" data-ls="delayin:1500; rotatexin:90; offsetxout:80; durationout:400; parallaxlevel:0; position:fixed;">
+				<div style="margin-left:-40px; margin-top:-40px;padding-top:0px; padding-right:80px; padding-bottom:0px; padding-left:80px; font-family:Montserrat; font-size:65px; line-height:130px; color:#ffffff; background:#17aed8; top:100%; left:100%; text-align:initial;" class="">BACK</div>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:8000; transition2d:104; timeshift:-1000; kenburnszoom:in; kenburnsscale:1.1;">
+			<img width="2048" height="900" src="images/asia.jpg" class="ls-bg" alt="" />
+			<div style="width:100%; height:100%; background:rgba(0, 0, 0, 0.5); top:50%; left:50%;" class="ls-l" data-ls="durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<p style="text-align:center; white-space:pre-wrap;width:750px; font-family:Montserrat; font-size:37px; color:#ffffff; top:305px; left:50%; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetyin:-20; durationin:3200; delayin:500; easingin:easeOutExpo; fadein:false; offsetxout:-80; durationout:400; texttransitionin:true; texttypein:chars_asc; textshiftin:35; textoffsetxin:-180; textdurationin:600; texteasingin:easeInQuart; textstartatin:transitioninstart + 0; parallaxlevel:0;">It's better to see something once than to hear about it a thousand times.</p>
+			<p style="text-align:center; font-weight:400;font-family:'Roboto Slab'; font-size:20px; color:#ffffff; top:252px; left:50%;" class="ls-l ls-hide-phone" data-ls="durationin:2500; delayin:3800; easingin:easeOutElastic; rotatexin:90; transformoriginin:50% 100% 0; offsetxout:-80; durationout:400; parallaxlevel:0;">MU CANG CHAI</p>
+			<div style="text-align:center; font-weight:400;width:152px; height:2px; font-size:20px; background:#eb7412; top:284px; left:50%;" class="ls-l ls-hide-phone" data-ls="durationin:600; delayin:3400; easingin:easeOutQuint; scalexin:0; offsetxout:-80; durationout:400; parallaxlevel:0;"></div>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="delayin:4500; easingin:easeOutBack; rotatexin:-360; offsetxout:-80; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#0c2109; parallaxlevel:0;">
+				<p style="cursor:pointer;padding-top:10px; padding-right:25px; padding-bottom:10px; padding-left:25px; border-top:2px solid #fff; border-right:2px solid #fff; border-bottom:2px solid #fff; border-left:2px solid #fff; font-family:Montserrat; font-size:14px; color:#ffffff; background:rgba(0, 0, 0, 0.15); border-radius:25px; top:422px; left:50%; text-align:center;" class="">READ MORE</p>
+			</a>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#1" target="_self" data-ls="delayin:3500; easingin:easeOutBack; rotatexin:-360; offsetxout:-80; durationout:400; parallaxlevel:0;">
+				<p style="text-align:center; font-weight:normal;padding-top:20px; padding-right:120px; padding-bottom:20px; padding-left:120px; border-top:8px solid #fff; border-right:8px solid #fff; border-bottom:8px solid #fff; border-left:8px solid #fff; font-family:Montserrat; font-size:55px; line-height:100px; color:#ffffff; background:rgba(0, 0, 0, 0.15); border-radius:80px; top:502px; left:50%;" class="">READ MORE</p>
+			</a>
+			<p style="text-align:center; white-space:pre-wrap;width:1200px; font-family:Montserrat; font-size:75px; line-height:110px; color:#ffffff; top:100px; left:51%; white-space:normal;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-150; durationin:600; delayin:500; easingin:easeInQuart; offsetxout:-80; durationout:400; parallaxlevel:0;">It's better to see something once than to hear about it a thousand times.</p>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="bgsize:cover; duration:10000; transition2d:104; timeshift:-500; kenburnszoom:in; kenburnsscale:1.05;">
+			<img width="1920" height="1282" src="images/europe.jpg" class="ls-bg" alt="" />
+			<div style="width:100%; height:100%; background:rgba(16, 20, 48, 0.78); top:50%; left:50%;" class="ls-l ls-hide-phone" data-ls="durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<div style="box-shadow: 0 7px 13px rgba(0,0,0,0.18), 0 0px 1px rgba(0,0,0,0.05);width:500px; height:500px; background:#ffffff; border-radius:0 4px 4px 0; top:100px; left:675px;" class="ls-l ls-hide-phone" data-ls="delayin:300; easingin:easeOutExpo; rotateyin:-40; scalexin:1.3; scaleyin:1.3; transformoriginin:0% 50% 0; durationout:400; parallaxlevel:0;"></div>
+			<img width="500" height="500" src="images/monaco.jpg" class="ls-l ls-hide-phone" alt="" style="border-radius:4px 0 0 4px; top:100px; left:175px;" data-ls="delayin:300; easingin:easeOutExpo; rotateyin:40; scalexin:1.3; scaleyin:1.3; transformoriginin:100% 50% 0; durationout:400; parallaxlevel:0;">
+			<p style="font-weight:300;width:400px; font-family:Poppins; font-size:30px; line-height:36px; color:#4092c9; top:141px; left:720px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:0px; offsetyin:50px; delayin:800; easingin:easeOutQuint; durationout:400; parallaxlevel:0;">3-Night French Riviera Tour from Milan to Monaco</p>
+			<p style="font-weight:500;width:400px; font-family:Poppins; font-size:14px; line-height:20px; color:#57595e; top:245px; left:720px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetyin:50; delayin:900; easingin:easeOutQuint; durationout:400; parallaxlevel:0;">Leave Milan and follow the lead of the jet set crowd to the south of France! The 3-night tour takes a route through north Italy, passing San Remo, as well as the glittering French Riviera (Côte d'Azur). Discover the highlights of Monaco on a walking tour; get to know the celebrity-studded towns of St Raphael, St Tropez and Cannes; and fall in love with Provence during visits to Saint-Paul de Vence and Grasse.</p>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="offsetxin:30; delayin:1100; easingin:easeOutExpo; durationout:400; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#43dcf0; parallaxlevel:0;">
+				<p style="font-weight:500;padding-top:5px; padding-right:30px; padding-bottom:3px; padding-left:30px; font-family:Poppins; font-size:14px; line-height:24px; color:#ffffff; background:#3fcdde; border-radius:20px; top:532px; left:981px;" class="">CHECK PRICES</p>
+			</a>
+			<p style="font-weight:300; letter-spacing: -0.04em;font-family:Poppins; font-size:40px; line-height:36px; color:#ffffff; top:541px; left:471px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:-80; delayin:1400; easingin:easeOutExpo; durationout:400; parallaxlevel:0;">Monaco</p>
+			<p style="font-weight:500; letter-spacing: -0.04em;font-family:Poppins; font-size:15px; line-height:25px; color:#ffffff; top:526px; left:563px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:-80; delayin:1200; easingin:easeOutExpo; durationout:400; parallaxlevel:0;">EUROPE</p>
+			<img width="34" height="50" src="images/pin.png" class="ls-l ls-hide-phone" alt="" style="top:520px; left:622px; white-space:normal;" data-ls="delayin:1000; easingin:easeOutElastic; rotatein:-60; transformoriginin:50% 100% 0; durationout:400; parallaxlevel:0;">
+			<p style="font-weight:400; letter-spacing: -0.02em;font-family:Poppins; font-size:15px; line-height:25px; color:#ffffff; top:36px; left:180px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:-1000; durationin:2500; delayin:500; easingin:easeOutExpo; offsetxout:1000; durationout:2500; startatout:transitioninend + 400; easingout:easeInExpo; parallaxlevel:0;">WEATHER ON THE WEEK</p>
+			<p style="font-weight:300; letter-spacing: -0.04em;font-family:Poppins; font-size:28px; line-height:36px; color:#ffffff; top:65px; left:218px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:-1000; durationin:2500; delayin:700; easingin:easeOutExpo; offsetxout:1000; durationout:2500; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">28°C</p>
+			<img width="39" height="32" src="images/icon-day.png" class="ls-l ls-hide-phone" alt="" style="top:61px; left:178px;" data-ls="offsetxin:-1000; durationin:2500; delayin:700; easingin:easeOutExpo; offsetxout:1000; durationout:2500; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">
+			<p style="font-weight:300; letter-spacing: -0.04em;font-family:Poppins; font-size:28px; line-height:36px; color:#ffffff; top:65px; left:330px; white-space:normal;" class="ls-l ls-hide-phone" data-ls="offsetxin:-1000; durationin:2500; delayin:600; easingin:easeOutExpo; offsetxout:1000; durationout:2500; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">22°C</p>
+			<img width="36" height="27" src="images/icon-night.png" class="ls-l ls-hide-phone" alt="" style="top:65px; left:291px;" data-ls="offsetxin:-1000; durationin:2500; delayin:600; easingin:easeOutExpo; offsetxout:1000; durationout:2500; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">
+			<img width="31" height="31" src="images/facebook.png" class="ls-l ls-hide-phone" alt="" style="cursor:pointer;top:534px; left:719px;" data-ls="delayin:500; rotatexin:-45; scalexin:2; scaleyin:2; transformoriginin:50% 50% 0px; durationout:400; transformoriginout:50% 0% 0; hover:true; hoverdurationin:300; hoveropacity:0.8; parallaxlevel:0;">
+			<img width="31" height="31" src="images/twitter.png" class="ls-l ls-hide-phone" alt="" style="cursor:pointer;top:534px; left:763px;" data-ls="delayin:700; rotatexin:-45; scalexin:2; scaleyin:2; transformoriginin:50% 50% 0px; durationout:400; transformoriginout:50% 0% 0; hover:true; hoverdurationin:300; hoveropacity:0.8; parallaxlevel:0;">
+			<img width="31" height="31" src="images/google.png" class="ls-l ls-hide-phone" alt="" style="cursor:pointer;top:534px; left:805px;" data-ls="delayin:900; rotatexin:-45; scalexin:2; scaleyin:2; transformoriginin:50% 50% 0px; durationout:400; transformoriginout:50% 0% 0; hover:true; hoverdurationin:300; hoveropacity:0.8; parallaxlevel:0;">
+			<img width="31" height="31" src="images/instagram.png" class="ls-l ls-hide-phone" alt="" style="cursor:pointer;top:534px; left:852px;" data-ls="delayin:1100; rotatexin:-45; scalexin:2; scaleyin:2; transformoriginin:50% 50% 0px; durationout:400; transformoriginout:50% 0% 0; hover:true; hoverdurationin:300; hoveropacity:0.8; parallaxlevel:0;">
+			<div style="width:100%; height:600px; background:#ffffff; top:100%; left:0px;" class="ls-l ls-hide-tablet ls-hide-desktop ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:200; offsetyout:200; durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<p style="margin-top:-300px;width:1200px; font-family:Poppins; font-size:80px; line-height:110px; color:#5c5c5c; top:100%; left:50%; text-align:center; white-space:normal;" class="ls-l ls-hide-tablet ls-hide-desktop ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:0px; offsetyin:-50px; delayin:800; easingin:easeOutQuint; durationout:400; parallaxlevel:0; position:fixed;">3-Night French Riviera Tour from Milan to Monaco</p>
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#1" target="_self" data-ls="offsetyin:50; delayin:1100; easingin:easeOutExpo; durationout:400; parallaxlevel:0; position:fixed;">
+				<p style=" margin-top:-120px;padding-top:5px; padding-right:90px; padding-bottom:3px; padding-left:90px; font-family:Poppins; font-size:55px; line-height:120px; color:#ffffff; background:#3fcdde; border-radius:0px; top:100%; left:50%; font-weight:500; text-align:center; white-space:normal;" class=" ls-hide-tablet ls-hide-desktop">CHECK PRICES</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="bgsize:cover; duration:8000; transition2d:104; timeshift:-500; deeplink:africa; kenburnsscale:1.2;">
+			<img width="2048" height="1139" src="images/africa-rally.jpg" class="ls-bg" alt="" />
+			<div style="width:100%; height:100%; background:rgba(20, 12, 41, 0.64); top:0%; left:0%;" class="ls-l" data-ls="durationin:900; easingin:easeOutQuint; durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<p style="font-weight:900;font-family:Montserrat; font-size:300px; color:rgba(255, 255, 255, 0.06); top:419px; left:475px;" class="ls-l" data-ls="offsetxin:-1500; durationin:3000; delayin:200; easingin:easeOutExpo; offsetxout:1500; durationout:3000; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">WRC</p>
+			<img width="658" height="351" src="images/track.png" class="ls-l" alt="" style="opacity:0.06;font-family:Montserrat; font-size:300px; color:rgba(255, 255, 255, 0.06); top:-21px; left:176px;" data-ls="offsetxin:1500; durationin:3000; delayin:200; easingin:easeOutExpo; offsetxout:-1500; durationout:3000; startatout:transitioninend + 1; easingout:easeInExpo; parallaxlevel:0;">
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="offsetyin:40; durationin:800; delayin:1000; easingin:easeOutQuint; durationout:400; parallaxlevel:0;">
+				<p style="overflow:hidden;width:400px; padding-top:0px; padding-bottom:0px; font-family:Montserrat; font-size:30px; line-height:40px; color:#ffffff; top:130px; left:657px; white-space:normal;" class="">Johannesburg, AFRICA</p>
+			</a>
+			<div style="box-shadow: -10px 0 20px rgba(0,0,0,0.1);width:450px; height:320px; background:rgba(255, 255, 255, 1); top:182px; left:609px;" class="ls-l ls-hide-phone" data-ls="offsetxin:150; durationin:950; easingin:easeOutExpo; rotateyin:-15; transformoriginin:0% 50% 100px; durationout:400; parallaxlevel:0;"></div>
+			<img width="410" height="586" src="images/danica.png" class="ls-l ls-hide-phone" alt="" style="top:56px; left:281px;" data-ls="offsetyin:-80; durationin:950; easingin:easeOutExpo; durationout:400; parallaxlevel:0;">
+			<div style="padding-top:0px; padding-bottom:0px; font-family:Montserrat; font-size:14px; line-height:20px; color:#373737; top:458px; left:694px;" class="ls-l ls-hide-phone" data-ls="offsetyin:20; delayin:600; easingin:easeOutQuint; durationout:400; parallaxlevel:0;"><span class="icon-calendar"> </span>Apr 12th, 2016</div>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="offsetxin:150; durationin:950; easingin:easeOutExpo; rotateyin:-15; transformoriginin:-24.6% 317.5% 100px; durationout:400; parallaxlevel:0;">
+				<p style="text-align:justify;width:335px; padding-top:0px; padding-bottom:0px; font-family:Poppins; font-size:16px; line-height:20px; color:#5e5e5e; top:215px; left:691px; white-space:normal;" class="">Win a ticket, to learn from <b>Danica Patrick</b> how to drive a real rally car. </p>
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="durationin:950; delayin:50; easingin:easeOutExpo; rotateyin:-15; transformoriginin:0% 150% 100px; durationout:400; texttransitionin:true; texttypein:lines_asc; textoffsetxin:150; textdurationin:950; texteasingin:easeOutExpo; textstartatin:transitioninstart + 0; parallaxlevel:0;">
+				<p style="font-weight:600;font-style:italic;width:300px; padding-top:0px; padding-bottom:0px; padding-left:22px; font-family:Poppins; font-size:14px; line-height:20px; color:#855da2; top:279px; left:697px; white-space:normal;" class="">Danica Patrick is the most successful woman in the history of American openwheel racing.</p>
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="offsetxin:150; offsetyin:-100; durationin:950; easingin:easeOutExpo; rotateyin:-15; scaleyin:0; transformoriginin:0% 150% 100px; durationout:400; parallaxlevel:0;">
+				<div style="font-weight:600;font-style:italic; text-align: justify;width:5px; height:60px; padding-top:0px; padding-bottom:0px; font-family:Poppins; font-size:14px; line-height:20px; background:#855da2; top:279px; left:691px; white-space:normal;" class=""></div>
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="offsetxin:150; durationin:950; easingin:easeOutExpo; rotateyin:-15; transformoriginin:-24.9% -40% 100px; durationout:400; parallaxlevel:0;">
+				<p style="text-align:justify;width:335px; padding-top:0px; padding-bottom:0px; font-family:Poppins; font-size:16px; line-height:20px; color:#5e5e5e; top:365px; left:691px; white-space:normal;" class="">We choosed a track section where you have the ability to improve your skills on gravel.</p>
+			</a>
+			<a style="" class="ls-l ls-hide-phone" href="#1" target="_self" data-ls="durationin:800; delayin:1000; easingin:easeOutQuint; rotateyin:-90; durationout:800; easingout:easeOutQuint; rotatexout:60; scalexout:0.7; scaleyout:0.7; hover:true; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#241a1f; hovertransformperspective:300; parallaxlevel:0;">
+				<p style="text-align:center;font-weight:500;width:170px; padding-top:7px; padding-right:0px; padding-bottom:7px; padding-left:0px; border-top:1px solid #fff; border-right:1px solid #fff; border-bottom:1px solid #fff; border-left:1px solid #fff; font-family:Poppins; font-size:16px; line-height:30px; color:#ffffff; top:523px; left:887px; white-space:normal;" class="">FIND TICKETS</p>
+			</a>
+			<div style="width:160px; height:100%; background:rgba(24, 25, 29, 0.80); top:50%; left:100%;" class="ls-l ls-hide-phone" data-ls="offsetxin:160; durationin:800; delayin:1500; easingin:easeOutExpo; durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<img width="160" height="160" src="images/ds-racing.png" class="ls-l ls-hide-phone" alt="" style="top:0%; left:100%; width:160px;" data-ls="offsetxin:160; durationin:800; delayin:1500; easingin:easeOutExpo; durationout:400; parallaxlevel:0; position:fixed;">
+			<img width="160" height="280" src="images/tech-specs.png" class="ls-l ls-hide-phone" alt="" style="top:50%; left:100%; width:160px;" data-ls="offsetxin:160; durationin:700; delayin:1700; easingin:easeOutExpo; durationout:400; parallaxlevel:0; position:fixed;">
+			<img width="37" height="37" src="images/fb-circle.png" class="ls-l ls-hide-phone" alt="" style="top:445px; left:903px;" data-ls="offsetyin:20; delayin:700; easingin:easeOutQuint; durationout:400; easingout:easeOutQuint; parallaxlevel:0;">
+			<img width="37" height="37" src="images/tw-circle.png" class="ls-l ls-hide-phone" alt="" style="top:445px; left:953px;" data-ls="offsetyin:20; delayin:800; easingin:easeOutQuint; durationout:400; easingout:easeOutQuint; parallaxlevel:0;">
+			<img width="36" height="36" src="images/pint-circle.png" class="ls-l ls-hide-phone" alt="" style="top:446px; left:1003px;" data-ls="offsetyin:20; delayin:900; easingin:easeOutQuint; durationout:400; easingout:easeOutQuint; parallaxlevel:0;">
+			<img width="410" height="586" src="images/danica.png" class="ls-l ls-hide-desktop ls-hide-tablet" alt="" style="height:80%; top:50%; left:50%;" data-ls="durationout:400; parallaxlevel:0; position:fixed;">
+			<a style="" class="ls-l ls-hide-desktop ls-hide-tablet" href="#1" target="_self" data-ls="durationin:800; delayin:1000; easingin:easeOutQuint; rotatexin:90; durationout:800; easingout:easeOutQuint; rotatexout:60; scalexout:0.7; scaleyout:0.7; parallaxlevel:0; position:fixed;">
+				<p style="margin-top:-150px;padding-top:15px; padding-right:85px; padding-bottom:7px; padding-left:90px; font-family:Poppins; font-size:70px; line-height:130px; color:rgba(45, 31, 77, 0.9); background:#ffffff; top:100%; left:50%; text-align:center; font-weight:900;" class="">FIND TICKETS</p>
+			</a>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				type: 'fullsize',
+				responsiveUnder: 1350,
+				maxRatio: 1,
+				slideBGSize: 'auto',
+				hideUnder: 0,
+				hideOver: 100000,
+				autoStart: false,
+				keybNav: false,
+				touchNav: false,
+				skin: 'v5',
+				globalBGColor: '#eff0f2',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				allowRestartOnResize: true,
+				skinsPath: '../../layerslider/skins/',
+				height: 700
+			});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Room Experiment</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,regular,700|Montserrat:regular,700,900,100,200,300">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:720px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:10000; timeshift:-1000; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:-30; parallaxrotate:-40; parallaxtransformperspective:800;">
+			<img width="1920" height="1041" src="images/buildings2-compressor.jpg" class="ls-l" alt="" style="top:50%; left:540px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:400px; height:290px; font-size:16px;" data-ls="showinfo:1; delayin:1000; rotateyin:131; transformoriginin:100% 50% 0; parallax:true; parallaxlevel:-7; static:forever; rotationY:131;">
+			<img width="1320" height="520" src="images/back-wall-test-d.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:660px; height:260px; background:#f5f5f5; font-size:43px;" data-ls="showinfo:1; offsetyin:4; delayin:500; easingin:easeOutQuint; rotatexin:90; transformoriginin:50% 100% 0; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="1320" height="520" src="images/back-wall-light.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:660px; height:260px; font-size:43px;" data-ls="showinfo:1; delayin:1200; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="161" height="70" src="images/subw-shdw.png" class="ls-l" alt="" style="top:455px; left:666px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-size:43px;" data-ls="showinfo:1; delayin:2000; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="1800" height="1200" src="images/wood2-compressor.jpg" class="ls-l" alt="" style="top:490px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:1320px; height:1320px; background:#e6e6e6;" data-ls="showinfo:1; overlay:null; offsetyin:200; easingin:easeOutQuint; rotatexin:110; transformoriginin:50% 0% 0; startatout:slidechangeonly + 0; parallax:true; parallaxlevel:-10; static:forever; rotationX:79; scaleX:0.5; scaleY:0.5;">
+			<img width="1320" height="1320" src="images/top-smooth.png" class="ls-l" alt="" style="top:231px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:1320px; height:1320px; background:#d6d6d6;" data-ls="showinfo:1; overlay:null; offsetyin:36; durationin:1250; delayin:750; easingin:easeOutQuint; rotatexin:300; scalexin:0.45; scaleyin:0.45; transformoriginin:50% 0% 0; parallax:true; parallaxlevel:-10; static:forever; rotationX:101; scaleX:0.5; scaleY:0.5;">
+			<img width="800" height="520" src="images/side-window-dark.png" class="ls-l" alt="" style="top:230px; left:570px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:400px; height:260px; font-size:16px;" data-ls="showinfo:1; delayin:1000; easingin:easeOutQuint; rotateyin:280; transformoriginin:100% 50% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:131;">
+			<img width="800" height="520" src="images/window-reflection.png" class="ls-l" alt="" style="top:490px; left:570px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.06; width:400px; height:260px; font-size:16px;" data-ls="showinfo:1; delayin:1000; easingin:easeOutQuint; rotateyin:280; transformoriginin:100% -50% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:131;">
+			<img width="800" height="520" src="images/side-wall-test-2.png" class="ls-l" alt="" style="top:230px; left:-90px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:400px; height:260px; font-size:16px;" data-ls="showinfo:1; delayin:1000; easingin:easeOutQuint; rotateyin:-90; transformoriginin:100% 50% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:49;">
+			<img width="800" height="520" src="images/side-wall-test-2.png" class="ls-l" alt="" style="top:489px; left:-90px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.04; width:400px; height:260px; font-size:16px;" data-ls="showinfo:1; delayin:1200; rotateyin:49; transformoriginin:100% -50% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:49;">
+			<img width="800" height="520" src="images/side-paint-v2-compressor.png" class="ls-l" alt="" style="top:231px; left:-90px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.9; width:400px; height:260px; font-size:16px; white-space:normal;" data-ls="showinfo:1; offsetxin:-90; delayin:2000; easingin:easeOutQuint; rotateyin:56; scalexin:1.2; scaleyin:1.2; transformoriginin:100% 50% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:49;">
+			<img width="1014" height="396" src="images/tv2.png" class="ls-l" alt="" style="top:287px; left:445px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:392px; height:153px;" data-ls="showinfo:1; overlay:null; offsetyin:-10; delayin:1300; easingin:easeOutQuint; scalexin:2; scaleyin:2; parallax:true; parallaxlevel:-10; parallaxevent:null; parallaxaxis:null; static:forever;">
+			<img width="1052" height="66" src="images/soundbar2.png" class="ls-l" alt="" style="box-shadow: -5px 5px 20px rgba(0,0,0,0.2), -0px 5px 10px rgba(0,0,0,0.2);top:435px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:200px; background:#0f0f0f; border-radius:10px;" data-ls="showinfo:1; overlay:null; offsetyin:20; delayin:1600; easingin:easeOutQuint; scalexin:2; scaleyin:2; parallax:true; parallaxlevel:-10; parallaxevent:null; parallaxaxis:null; static:forever;">
+			<div style="top:455px; left:796px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:26px; height:35px; background:#7a7a7a; font-size:43px;" class="ls-l" data-ls="showinfo:1; offsetxin:60; offsetyin:60; delayin:1900; easingin:easeOutQuint; rotatexin:81; transformoriginin:-490% 0% 0; parallax:true; parallaxlevel:-10; static:forever; rotationX:81;"></div>
+			<div style="top:455px; left:766px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:30px; height:35px; background:#0c0c0c; font-size:43px;" class="ls-l" data-ls="showinfo:1; offsetxin:60; offsetyin:60; delayin:1900; easingin:easeOutQuint; rotateyin:107; transformoriginin:100% -300% 0; parallax:true; parallaxlevel:-10; static:forever; rotationY:107;"></div>
+			<img width="203" height="270" src="images/subw2.png" class="ls-l" alt="" style="top:461px; left:804px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-size:45px; height:38px;" data-ls="showinfo:1; offsetxin:60; offsetyin:60; delayin:1900; easingin:easeOutQuint; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="1320" height="1320" src="images/bottom-shdw-blurred.png" class="ls-l" alt="" style="top:490px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.3; width:1320px; height:1320px;" data-ls="showinfo:1; overlay:null; delayin:1200; rotatexin:79; scalexin:0.5; scaleyin:0.5; transformoriginin:50% 0% 0; parallax:true; parallaxlevel:-10; static:forever; rotationX:79; scaleX:0.5; scaleY:0.5;">
+			<img width="345" height="94" src="images/shandow-2.png" class="ls-l" alt="" style="top:488px; left:841px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.4; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2)); height:20px;" data-ls="showinfo:1; overlay:null; offsetxin:120; offsetyin:60; delayin:2000; easingin:easeOutQuint; scalexin:1.5; scaleyin:1.5; parallax:true; parallaxlevel:-10; static:forever; rotation:7;">
+			<img width="950" height="1140" src="images/plant-light-compressor.png" class="ls-l" alt="" style="top:310px; left:811px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:171px; height:205px; filter:drop-shadow(-30px 22px 8px rgba(0,0,0,0.25));" data-ls="showinfo:1; overlay:null; offsetxin:120; offsetyin:60; delayin:2000; easingin:easeOutQuint; scalexin:1.5; scaleyin:1.5; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="345" height="94" src="images/shandow-2.png" class="ls-l" alt="" style="top:-42px; left:592px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.15; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2)); height:10px; width:60px;" data-ls="showinfo:1; overlay:null; delayin:2000; transformoriginin:50% 0% 0; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="229" height="246" src="images/lamp-top-2.png" class="ls-l" alt="" style="top:-43px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:164px;" data-ls="showinfo:1; overlay:null; offsetyin:-150; delayin:2200; easingin:easeOutQuint; scalexin:1.5; scaleyin:1.5; parallax:true; parallaxlevel:-10; static:forever;">
+			<p style="text-shadow: 0 0 10px rgba(0,0,0,0.4); ;top:586px; left:908px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; color:#ffffff; font-family:Oswald; font-size:64px; padding-left:10px; padding-right:10px;" class="ls-l" data-ls="showinfo:1; overlay:null; delayin:2500; texttransitionin:true; texttypein:chars_rand; textscaleyin:random(2,4); parallax:true; parallaxlevel:-12; static:forever;">Layer Slider 6</p>
+			<p style="cursor:default;top:668px; left:1018px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; color:rgba(255, 255, 255, 0.99); font-family:Montserrat; font-size:20px; background:#00a2ff; padding-left:10px; padding-right:10px;" class="ls-l" data-ls="showinfo:1; overlay:null; offsetxin:-100%; durationin:1500; delayin:4500; clipin:0 0 0 100%; texttransitionin:true; texttypein:chars_desc; textstartatin:transitioninstart + 0; hover:true; hoveropacity:1; hoverbgcolor:#2559e8; parallax:true; parallaxlevel:-12; static:forever;">ROOM EXPERIMENT</p>
+			<img width="846" height="80" src="images/tv-stand-final.png" class="ls-l" alt="" style="top:460px; left:355px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:423px; height:40px; font-size:57px;" data-ls="showinfo:1; offsetyin:60; delayin:1800; easingin:easeOutQuint; scalexin:1.5; scaleyin:1.5; transformoriginin:71% -25% 0; parallax:true; parallaxlevel:-10; static:forever;">
+			<div style="top:462px; left:394px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:373px; height:35px; background:#968678; font-size:43px;" class="ls-l" data-ls="showinfo:1; offsetyin:60; delayin:1800; easingin:easeOutQuint; rotatexin:81; scalexin:1.5; scaleyin:1.5; transformoriginin:70% -25% 0; parallax:true; parallaxlevel:-10; static:forever; rotationX:81;"></div>
+			<img width="345" height="94" src="images/shandow-2.png" class="ls-l" alt="" style="top:452px; left:402px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.35; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2)); height:8px;" data-ls="showinfo:1; overlay:null; offsetxin:300; delayin:2100; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="206" height="768" src="images/giraffe-compressor.png" class="ls-l" alt="" style="top:378px; left:415px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; height:80px; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2));" data-ls="showinfo:1; overlay:null; offsetxin:300; delayin:2100; rotatein:10; transformoriginin:50% 100% 0; loop:true; loopduration:300; loopstartat:transitioninstart + 500; loopeasing:easeOutQuint; looprotate:-7; looptransformorigin:50% 100% 0; loopcount:1; loopyoyo:true; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="345" height="94" src="images/shandow-2.png" class="ls-l" alt="" style="top:452px; left:449px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0.35; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2)); height:10px;" data-ls="showinfo:1; overlay:null; offsetxin:300; delayin:2200; parallax:true; parallaxlevel:-10; static:forever;">
+			<img width="360" height="464" src="images/mini-palm-light-compressor.png" class="ls-l" alt="" style="top:353px; left:434px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:84px; height:108px; filter:drop-shadow(-10px 8px 8px rgba(0,0,0,0.2));" data-ls="showinfo:1; overlay:null; offsetxin:300; delayin:2200; rotatein:10; transformoriginin:50% 100% 0; loop:true; loopduration:300; loopstartat:transitioninstart + 500; loopeasing:easeOutSine; looprotate:-5; looptransformorigin:50% 100% 0; loopcount:1; loopyoyo:true; parallax:true; parallaxlevel:-10; static:forever;">
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; overlay:null; offsetyin:-100lh; durationin:1500; delayin:4500; clipin:100% 0 0 0; scalexout:0.5; scaleyout:0.5; loop:true; loopduration:2000; loopcount:-1; loopyoyo:true; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:#00A0FF; parallax:true; parallaxlevel:-10;">
+				<p style="cursor:pointer;text-shadow:0 0 1px rgba(0,0,0,0.2);top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; color:rgba(255, 255, 255, 0.99); font-family:Montserrat; font-size:24px; background:#0070B3; padding-left:15px; padding-right:15px; padding-top:3px; padding-bottom:3px;" class="">START</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="timeshift:-500; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:-30; parallaxrotate:-40; parallaxtransformperspective:800;">
+			<div style="box-shadow: -5px 5px 20px rgba(0,0,0,0.2), -0px 5px 10px rgba(0,0,0,0.2); z-index:130;top:300px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:215px; height:121px; font-size:4px;" class="ls-l" data-ls="scalexin:0.7; scaleyin:0; parallax:true; parallaxlevel:-10; parallaxevent:null; parallaxaxis:null; static:forever;">
+				<iframe width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-src="https://player.vimeo.com/video/184745595?color=ffffff&amp;badge=0"></iframe>
+			</div>
+			<img width="1000" height="387" src="images/sofa-compressor.png" class="ls-l" alt="" style="z-index:121;top:509px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:660px;" data-ls="showinfo:1; overlay:null; offsetyin:500; scalexin:2; scaleyin:2; offsetyout:500; scalexout:2; scaleyout:2; parallax:true; parallaxlevel:-10;">
+			<img width="800" height="1275" src="images/iphone-hand-nav-compressor.png" class="ls-l" alt="" style="z-index:150;top:241px; left:-31px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:400px;" data-ls="showinfo:1; offsetyin:300; delayin:500; easingin:easeOutExpo; rotatexin:30; transformoriginin:50% 70% 0; parallax:true; parallaxlevel:2; parallaxrotate:20; static:forever;">
+			<p style="z-index:151;top:513px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#8f8f8f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1200; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Cubic and straight? Yes, but with amazing details. Samoa modern sofa from innovative manufacturer ROM, Belgium.</p>
+			<p style="z-index:151;top:501px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#212121; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1100; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Main info</p>
+			<p style="z-index:152;text-transform:uppercase;top:489px; left:149px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:10px; color:#9f9f9f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1000; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">SKU: ROMSAMOA-CO1</p>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetyin:40; delayin:2000; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:rgba(0, 0, 0, 0.87); static:forever;">
+				<p style="z-index:124; text-shadow: 0 1px 1px rgba(0,0,0,0.2); cursor:pointer;top:684px; left:639px; text-align:center; font-weight:400; font-style:normal; text-decoration:none; font-family:Montserrat; font-size:24px; color:#ffffff; background:rgba(0, 0, 0, 0.5); line-height:30px; padding-bottom:10px; width:40px; height:40px; padding-top:5px; border-radius:0 10px 0 0; padding-right:5px; white-space:normal;" class="">&gt;</p>
+			</a>
+			<a style="" class="ls-l" href="#prev" target="_self" data-ls="showinfo:1; offsetyin:40; delayin:2000; hover:true; hoverdurationin:300; hoveropacity:1; hoverbgcolor:rgba(0, 0, 0, 0.88); static:forever;">
+				<p style="z-index:124; text-shadow: 0 1px 1px rgba(0,0,0,0.2); cursor:pointer;top:684px; left:594px; text-align:center; font-weight:400; font-style:normal; text-decoration:none; font-family:Montserrat; font-size:24px; color:#ffffff; background:rgba(0, 0, 0, 0.5); line-height:30px; padding-bottom:10px; width:40px; height:40px; padding-top:5px; border-radius:10px 0 0 0; padding-left:5px; white-space:normal;" class="">&lt;</p>
+			</a>
+			<img width="300" height="273" src="images/sofa-small-c.jpg" class="ls-l" alt="" style="z-index:151;top:321px; left:138px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:163px;" data-ls="showinfo:1; offsetxin:100lw; delayin:700; clipin:0 100% 0 0; offsetxout:-100lw; clipout:0 0 0 100%; parallax:true; parallaxlevel:2; parallaxrotate:20;">
+			<p style="z-index:152;text-transform:uppercase;top:458px; left:148px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:16px; color:#292929; line-height:17px; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:900; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Samoa modern sofa</p>
+			<a style="" class="ls-l" href="#prev" target="_self" data-ls="showinfo:1; delayin:900; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20; static:forever;">
+				<div style="z-index:152;cursor:uppercase;top:304px; left:140px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; font-family:Montserrat; font-size:16px; color:#292929; line-height:17px; width:27px; height:12px; white-space:normal;" class=""></div>
+			</a>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; delayin:900; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20; static:forever;">
+				<div style="z-index:152;cursor:uppercase;top:304px; left:272px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; font-family:Montserrat; font-size:16px; color:#292929; line-height:17px; width:27px; height:12px; white-space:normal;" class=""></div>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="timeshift:-500; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:-30; parallaxrotate:-40; parallaxtransformperspective:800;">
+			<img width="800" height="390" src="images/sofa-2-shd.png" class="ls-l" alt="" style="z-index:121;top:449px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:690px;" data-ls="showinfo:1; overlay:null; offsetyin:500; scalexin:2; scaleyin:2; offsetyout:500; scalexout:2; scaleyout:2; parallax:true; parallaxlevel:-10;">
+			<p style="z-index:151;top:513px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#8f8f8f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1200; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">This retro style sofa has square edges with stainless steel feet and trim, and embodies Wegners ideology.</p>
+			<p style="z-index:151;top:501px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#212121; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1100; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Main info</p>
+			<h3 style="z-index:152;text-transform:uppercase;top:489px; left:149px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:10px; color:#9f9f9f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1000; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">
+				SKU: ROMWEGNER-CO2
+			</h3>
+			<img width="300" height="273" src="images/sofa-small-2-c.jpg" class="ls-l" alt="" style="z-index:151;top:321px; left:138px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:163px;" data-ls="showinfo:1; offsetxin:100lw; delayin:700; clipin:0 100% 0 0; offsetxout:-100lw; clipout:0 0 0 100%; parallax:true; parallaxlevel:2; parallaxrotate:20;">
+			<p style="z-index:152;text-transform:uppercase;top:458px; left:148px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:16px; color:#292929; line-height:17px; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:900; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Hans Wegner CH103 Sofa</p>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="timeshift:-500; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:-30; parallaxrotate:-40; parallaxtransformperspective:800;">
+			<img width="1127" height="443" src="images/sofa-3-sh-compressor.png" class="ls-l" alt="" style="z-index:121;top:499px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:690px;" data-ls="showinfo:1; overlay:null; offsetyin:500; scalexin:2; scaleyin:2; offsetyout:500; scalexout:2; scaleyout:2; parallax:true; parallaxlevel:-10;">
+			<p style="z-index:151;top:513px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#8f8f8f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1200; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Cassius Q Deluxe Sofa Bed Buy From NOVA Interiors, Contemporary furniture store located in Boston area.</p>
+			<p style="z-index:151;top:501px; left:139px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-size:10px; font-family:Montserrat; line-height:12px; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px; color:#212121; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1100; transformoriginin:117.8% -86.2% 0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textstartatin:transitioninstart + 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">Main info</p>
+			<p style="z-index:152;text-transform:uppercase;top:489px; left:149px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:10px; color:#9f9f9f; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:1000; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">SKU: ROMCASUS-CO3</p>
+			<img width="300" height="273" src="images/sofa-small-3-light.jpg" class="ls-l" alt="" style="z-index:151;top:321px; left:138px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:163px;" data-ls="showinfo:1; offsetxin:100lw; delayin:700; clipin:0 100% 0 0; offsetxout:-100lw; clipout:0 0 0 100%; parallax:true; parallaxlevel:2; parallaxrotate:20;">
+			<p style="z-index:152;text-transform:uppercase;top:458px; left:148px; text-align:left; font-weight:400; font-style:normal; text-decoration:none; width:135px; font-family:Montserrat; font-size:16px; color:#292929; line-height:17px; white-space:normal;" class="ls-l" data-ls="showinfo:1; delayin:900; transformoriginin:121.2% -131.8% 0; parallax:true; parallaxlevel:2; parallaxrotate:20;">CASSIUS Q DELUXE</p>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$("#slider").on('slideChangeWillStart', function( event, slider ) {
+			  if(slider.data.navigation.direction=="prev" && slider.slides.current.index === 2)
+			    return slider.slides.count;
+			  if(slider.data.navigation.direction=="next" && slider.slides.current.index === slider.slides.count)
+			    return 2;
+			
+			});
+
+
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.6',
+				autoStart: false,
+				skin: 'v6',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

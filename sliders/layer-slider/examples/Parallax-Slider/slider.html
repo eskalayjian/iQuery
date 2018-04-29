@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:593px;max-width:1920px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:5; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:40; parallaxrotate:20;">
+			<img width="1920" height="593" src="images/bg-header.jpg" class="ls-bg" alt="" />
+			<img width="951" height="383" src="images/nuage.png" class="ls-l" alt="" style="top:-66px; left:274px;" data-ls="offsetyin:50; durationin:1500; delayin:400; easingin:easeOutExpo; offsetxout:70; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-3;">
+			<img width="1147" height="165" src="images/shadow.png" class="ls-l" alt="" style="top:456px; left:187px;" data-ls="durationin:1500; delayin:100; easingin:easeInOutExpo; offsetxout:-70; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:4;">
+			<img width="524" height="149" src="images/montagne1.png" class="ls-l" alt="" style="top:86px; left:572px;" data-ls="offsetyin:200; delayin:400; easingin:easeInOutExpo; offsetxout:120; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-1;">
+			<img width="866" height="319" src="images/rebord.png" class="ls-l" alt="" style="top:133px; left:377px;" data-ls="offsetxin:150; delayin:200; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetxout:-80; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:1;">
+			<img width="233" height="150" src="images/grange.png" class="ls-l" alt="" style="top:116px; left:619px;" data-ls="offsetyin:50; delayin:500; easingin:easeInOutExpo; offsetxout:-30; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="720" height="284" src="images/route.png" class="ls-l" alt="" style="top:190px; left:307px;" data-ls="offsetxin:250; delayin:100; easingin:easeOutBack; scalexin:0; scaleyin:0; offsetxout:-120; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:3;">
+			<img width="216" height="154" src="images/truc.png" class="ls-l" alt="" style="top:243px; left:836px;" data-ls="offsetxin:-130; offsetyin:-80; durationin:900; delayin:800; easingin:easeInOutExpo; scalexin:0; scaleyin:0; offsetxout:-280; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:4;">
+			<img width="274" height="109" src="images/text1.png" class="ls-l" alt="" style="font-family:'Luckiest Guy'; font-size:70px; color:#201E17; top:256px; left:4px;" data-ls="offsetxin:100; durationin:1500; easingin:easeOutExpo; offsetxout:-120; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:6;">
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:5; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:40; parallaxrotate:20;">
+			<img width="1920" height="593" src="images/bg-header.jpg" class="ls-bg" alt="" />
+			<img width="446" height="470" src="images/particules-arriere.png" class="ls-l" alt="" style="top:19px; left:595px;" data-ls="offsetxin:-60; durationin:1400; delayin:100; easingin:easeOutExpo; offsetxout:60; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-3;">
+			<img width="528" height="127" src="images/gazon.png" class="ls-l" alt="" style="top:418px; left:565px;" data-ls="offsetxin:80; durationin:1500; easingin:easeOutExpo; offsetxout:-80; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="264" height="97" src="images/text2.png" class="ls-l" alt="" style="font-family:'Luckiest Guy'; font-size:50px; color:#201E17; top:215px; left:300px;" data-ls="offsetxin:100; durationin:1500; easingin:easeOutExpo; offsetxout:-100; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:3;">
+			<img width="330" height="590" src="images/iphone_00000.png" class="ls-l" alt="" style="top:-44px; left:629px;" data-ls="offsetxin:150; durationin:1500; easingin:easeOutExpo; offsetxout:-150; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="330" height="590" src="images/iphone_00000.png" class="ls-l" alt="" style="top:-44px; left:629px;" data-ls="offsetxin:150; durationin:1500; easingin:easeOutExpo; offsetxout:-150; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="1170" height="58" src="images/particules-avant-shadow.png" class="ls-l" alt="" style="top:488px; left:75px;" data-ls="offsetxin:400; durationin:1500; easingin:easeOutExpo; offsetxout:-400; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:7;">
+			<img width="340" height="256" src="images/oiseau.png" class="ls-l" alt="" style="top:49px; left:-75px;" data-ls="offsetxin:250; durationin:1500; easingin:easeOutExpo; offsetxout:-250; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:4;">
+			<img width="1227" height="532" src="images/particules-avant.png" class="ls-l" alt="" style="top:11px; left:56px;" data-ls="offsetxin:350; durationin:1500; easingin:easeOutExpo; offsetxout:-350; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:7;">
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:5; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:40; parallaxrotate:20;">
+			<img width="1920" height="593" src="images/bg-header.jpg" class="ls-bg" alt="" />
+			<img width="1045" height="309" src="images/montagne3.png" class="ls-l" alt="" style="top:220px; left:174px;" data-ls="offsetxin:-70; durationin:1500; easingin:easeOutExpo; offsetxout:70; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-4;">
+			<img width="610" height="277" src="images/particule_back.png" class="ls-l" alt="" style="top:40px; left:486px;" data-ls="offsetxin:-40; durationin:1500; easingin:easeOutExpo; offsetxout:40; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-2;">
+			<img width="489" height="390" src="images/bizoune.png" class="ls-l" alt="" style="top:123px; left:548px;" data-ls="offsetxin:150; durationin:1500; easingin:easeOutExpo; offsetxout:-150; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="738" height="305" src="images/particule_front.png" class="ls-l" alt="" style="top:38px; left:430px;" data-ls="offsetxin:350; durationin:1500; easingin:easeOutExpo; offsetxout:-350; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:7;">
+			<img width="230" height="99" src="images/text3.png" class="ls-l" alt="" style="top:214px; left:120px;" data-ls="offsetxin:100; durationin:1500; easingin:easeOutExpo; offsetxout:-100; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="bgsize:cover; bgposition:50% 50%; duration:4000; transition2d:5; kenburnsscale:1.2; parallaxtype:3d; parallaxdistance:40; parallaxrotate:20;">
+			<img width="1920" height="593" src="images/bg-header.jpg" class="ls-bg" alt="" />
+			<img width="53" height="51" src="images/parachute.png" class="ls-l" alt="" style="top:127px; left:1115px;" data-ls="offsetxin:-60; offsetyin:-20; durationin:1500; easingin:easeOutExpo; rotatein:-80; scalexin:0.4; scaleyin:0.4; transformoriginin:50% 0% 0; offsetxout:60; durationout:500; easingout:easeInExpo; scalexout:2; scaleyout:2; parallax:true; parallaxlevel:-3;">
+			<img width="896" height="234" src="images/montagne_large.png" class="ls-l" alt="" style="top:283px; left:-50px;" data-ls="offsetxin:-40; durationin:1500; easingin:easeOutExpo; offsetxout:40; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-2;">
+			<img width="305" height="87" src="images/text4.png" class="ls-l" alt="" style="top:258px; left:815px;" data-ls="offsetxin:-30; durationin:1500; easingin:easeOutExpo; offsetxout:30; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:-1;">
+			<img width="158" height="190" src="images/loup.png" class="ls-l" alt="" style="top:340px; left:593px;" data-ls="offsetxin:100; durationin:1500; easingin:easeOutExpo; offsetxout:-100; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:2;">
+			<img width="216" height="216" src="images/branche_alpha.png" class="ls-l" alt="" style="top:102px; left:500px;" data-ls="offsetxin:230; durationin:1500; easingin:easeOutExpo; offsetxout:-120; durationout:400; easingout:easeInExpo; parallax:true; parallaxlevel:6;">
+			<img width="505" height="563" src="images/imac.png" class="ls-l" alt="" style="top:31px; left:75px;" data-ls="offsetxin:250; durationin:1500; easingin:easeOutExpo; offsetxout:-150; durationout:500; easingout:easeInExpo; parallax:true; parallaxlevel:7;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.0',
+				type: 'fullwidth',
+				responsiveUnder: 1280,
+				layersContainer: 1280,
+				maxRatio: 1,
+				hideUnder: 0,
+				hideOver: 100000,
+				skin: 'v5',
+				thumbnailNavigation: 'disabled',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

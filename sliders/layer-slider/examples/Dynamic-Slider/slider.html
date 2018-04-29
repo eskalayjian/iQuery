@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic Slider</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700|Montserrat:regular,700,900,100,200,300|Playfair+Display:regular,italic">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:800px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="bgcolor:#ffffff; duration:4000; kenburnsscale:1.2;">
+			<img width="2000" height="1500" src="images/main-bg.jpg" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:100%;" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:1.5; scaleyin:1.5; static:forever; position:fixed;">
+			<p style="text-transform:uppercase;top:652px; left:9px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; color:#ffffff; font-size:12px; font-family:Poppins;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="showinfo:1; offsetxin:-20; rotatein:90; transformoriginin:0% 50% 0; hover:true; hoveropacity:1; static:forever; rotation:90; position:fixed;">archiproducts.com</p>
+			<p style="top:288px; left:50%; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#ffffff; font-size:80px; line-height:80px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; durationin:2000; easingin:easeOutExpo; scalexin:2.5; scaleyin:2.5; transformoriginin:50% 143.8% 0;">DIESEL SOCIAL KITCHEN</p>
+			<p style="top:388px; left:50%; text-align:initial; font-weight:600; font-style:italic; text-decoration:none; mix-blend-mode:normal; color:#ffffff; font-size:30px; line-height:30px; font-family:'Playfair Display';" class="ls-l" data-ls="showinfo:1; durationin:2000; delayin:100; easingin:easeOutExpo; scalexin:2.5; scaleyin:2.5;"> design by Diesel Living with Scavolini</p>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; durationin:2000; delayin:200; easingin:easeOutExpo; scalexin:2.5; scaleyin:2.5; transformoriginin:50% -126.1% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:461px; left:50%; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#262626; font-size:16px; line-height:46px; font-family:Poppins; background:#feec04; border-radius:23px; padding-right:30px; padding-left:30px;" class="">CHECK NEW ARRIVALS</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="bgcolor:#ffffff; duration:4000; timeshift:-500; kenburnsscale:1.2;">
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:100%; height:100%; background:rgba(0, 0, 0, 0.4); z-index:99;" class="ls-l" data-ls="showinfo:1; delayin:200; easingin:easeOutExpo; fadein:false; scalexin:0; transformoriginin:100% 50% 0; easingout:easeInExpo; transformoriginout:0% 50% 0; static:forever; position:fixed;"></div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:1280px; height:700px; background:#ffffff;" class="ls-l" data-ls="showinfo:1; delayin:500; easingin:easeOutExpo; scalexin:0; transformoriginin:100% 50% 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<img width="658" height="698" src="images/cooker-pro90-gray_1490623344.png" class="ls-l" alt="" style="top:52px; left:622px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal;" data-ls="showinfo:1; offsetxin:100lw; delayin:1300; easingin:easeOutExpo; clipin:0 100% 0 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">
+			<div style="top:50%; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; height:700px; width:30px; background:#feec04;" class="ls-l" data-ls="showinfo:1; offsetxin:1280; delayin:500; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<p style="top:261px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#252525; font-size:80px; line-height:80px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1000; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">COOKER</p>
+			<p style="top:241px; left:111px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#434343; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:950; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">PROFESSIONAL - PRO90 5 GEV S XE</p>
+			<p style="top:401px; left:112px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#7b7b7b; font-size:14px; line-height:21px; font-family:Poppins; width:435px; white-space:normal;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1100; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">The original Bertazzoni Professional Series model wide format give great versatility and style to your kitchen. The oven is gas fan assisted with electric grill. Triple-glazed oven doors feature soft motion hinges and anti-slam closing system, and also minimise heat loss. </p>
+			<p style="top:335px; left:113px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#6e6e6e; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Manufacturer</p>
+			<p style="top:335px; left:217px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#282727; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Bertazzoni Professional</p>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:1150; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:555px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#423723; font-size:16px; line-height:46px; font-family:Poppins; background:#feec04; border-radius:23px; padding-right:30px; padding-left:30px;" class="">READ MORE</p>
+			</a>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:900; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:207px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#4c4c4c; font-size:11px; line-height:28px; font-family:Montserrat; background:#feec04; padding-right:15px; padding-left:15px;" class="">NEW ARRIVAL</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="bgcolor:#ffffff; duration:4000; timeshift:-500; kenburnsscale:1.2;">
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:1280px; height:700px; background:#ffffff;" class="ls-l" data-ls="showinfo:1; delayin:500; easingin:easeOutExpo; scalexin:0; transformoriginin:100% 50% 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<img width="647" height="698" src="images/cooker-pro60-yellow.png" class="ls-l" alt="" style="top:52px; left:633px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal;" data-ls="showinfo:1; offsetxin:100lw; delayin:1300; easingin:easeOutExpo; clipin:0 100% 0 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">
+			<div style="top:50%; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; height:700px; width:30px; background:#feec04;" class="ls-l" data-ls="showinfo:1; offsetxin:1280; delayin:500; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<p style="top:261px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#252525; font-size:80px; line-height:80px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1000; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">COOKER</p>
+			<p style="top:241px; left:111px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#434343; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:950; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">PROFESSIONAL - PRO60 4I MFE S XT </p>
+			<p style="top:401px; left:112px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#7b7b7b; font-size:14px; line-height:21px; font-family:Poppins; width:435px; white-space:normal;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1100; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">This convenient size gives great versatility to your kitchen design, and is ideal where a new range cooker is needed to fit into existing cabinetry. The electric oven has 11 cooking functions, including pizza function and fast-preheat. The hob has an induction top with four heating zones, including booster feature, pot detection and residual heat indicator for each zone.</p>
+			<p style="top:335px; left:113px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#6e6e6e; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Manufacturer</p>
+			<p style="top:335px; left:217px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#282727; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Bertazzoni Professional</p>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:1150; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:555px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#423723; font-size:16px; line-height:46px; font-family:Poppins; background:#feec04; border-radius:23px; padding-right:30px; padding-left:30px;" class="">READ MORE</p>
+			</a>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:900; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:207px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#4c4c4c; font-size:11px; line-height:28px; font-family:Montserrat; background:#feec04; padding-right:15px; padding-left:15px;" class="">NEW ARRIVAL</p>
+			</a>
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="bgcolor:#ffffff; duration:4000; timeshift:-500; kenburnsscale:1.2;">
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:1280px; height:700px; background:#ffffff;" class="ls-l" data-ls="showinfo:1; delayin:500; easingin:easeOutExpo; scalexin:0; transformoriginin:100% 50% 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<img width="618" height="698" src="images/tap.png" class="ls-l" alt="" style="top:52px; left:662px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal;" data-ls="showinfo:1; offsetxin:100lw; delayin:1300; easingin:easeOutExpo; clipin:0 100% 0 0; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">
+			<div style="top:50%; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; height:700px; width:30px; background:#feec04;" class="ls-l" data-ls="showinfo:1; offsetxin:1280; delayin:500; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;"></div>
+			<p style="top:261px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#252525; font-size:80px; line-height:80px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1000; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">KITCHEN TAP</p>
+			<p style="top:241px; left:111px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#434343; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:950; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">N 40 DW </p>
+			<p style="top:401px; left:112px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#7b7b7b; font-size:14px; line-height:21px; font-family:Poppins; width:435px; white-space:normal;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1100; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Remer Rubinetterie Kitchen section is characterized by new geometries and innovative designs. Minimal shapes and original layouts to complete the kitchen furniture with taste and personality, without sacrificing all the practice and the functionality needed in this specific context. </p>
+			<p style="top:335px; left:113px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#6e6e6e; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Manufacturer</p>
+			<p style="top:335px; left:217px; text-align:initial; font-weight:500; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#282727; font-size:14px; line-height:21px; font-family:Poppins;" class="ls-l" data-ls="showinfo:1; offsetxin:500; delayin:1050; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0;">Remer Rubinetterie</p>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:1150; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:555px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#423723; font-size:16px; line-height:46px; font-family:Poppins; background:#feec04; border-radius:23px; padding-right:30px; padding-left:30px;" class="">READ MORE</p>
+			</a>
+			<a style="" class="ls-l" href="#next" target="_self" data-ls="showinfo:1; offsetxin:500; delayin:900; easingin:easeOutExpo; offsetxout:-1000; easingout:easeInQuint; transformoriginout:0% 50% 0; hover:true; hoveropacity:1; hoverbgcolor:#ffff24;">
+				<p style="top:207px; left:110px; text-align:initial; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#4c4c4c; font-size:11px; line-height:28px; font-family:Montserrat; background:#feec04; padding-right:15px; padding-left:15px;" class="">NEW ARRIVAL</p>
+			</a>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.0b1',
+				type: 'fullwidth',
+				allowFullscreen: false,
+				maxRatio: 1,
+				autoStart: false,
+				skin: 'v6',
+				globalBGSize: 'cover',
+				navStartStop: false,
+				showCircleTimer: false,
+				thumbnailNavigation: 'disabled',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

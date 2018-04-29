@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Play By Scroll demo</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,regular,200,600">
+
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+
+</head>
+<body>
+
+	<p style="text-align:center;font-family:Nunito;font-size:30px;color:#555;">Please scroll down slowly...</p>
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1920px;height:100vh;margin:0 auto;margin-bottom: 0px;">
+
+
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2;">
+			<div style="top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; width:100%; height:100%; background:#000000;" class="ls-l" data-ls="showinfo:1; offsetyin:-100%; fadein:false; startatout:slidechangeonly + 0; easingout:easeInExpo; position:fixed;"></div>
+			<div style="border: 5px solid #eee; z-index: 1002;top:91%; left:50%; width:50px; border-radius:30px; height:90px;" class="ls-l" data-ls="offsetyin:50; delayin:500; offsetyout:-50; durationout:400; parallaxlevel:0; position:fixed;"></div>
+			<div style=" z-index: 1001; margin-top: -20px;top:91%; left:50%; border-radius:15px; background:#eee; width:10px; height:18px;" class="ls-l" data-ls="offsetyin:50; delayin:500; offsetyout:-50; durationout:400; loop:true; loopoffsety:10; loopduration:600; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looptransformorigin:50% 50% 0px; loopcount:-1; loopyoyo:true; parallaxlevel:0; position:fixed;"></div>
+			<div style="text-transform: uppercase;top:91%; left:0px; text-align:right; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:24px; width:46%;" class="ls-l" data-ls="showinfo:1; transitionin:false; transitionout:false; texttransitionin:true; texttypein:words_desc; textoffsetxin:-100; textstartatin:transitioninstart + 500; loop:true; loopoffsetx:-10; loopduration:600; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; loopcount:-1; loopyoyo:true; position:fixed;">scroll down or up</div>
+			<div style="text-transform: uppercase;top:91%; left:100%; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:24px; width:46%;" class="ls-l" data-ls="showinfo:1; transitionin:false; transitionout:false; texttransitionin:true; texttypein:words_asc; textoffsetxin:100; textstartatin:transitioninstart + 500; loop:true; loopoffsetx:10; loopduration:600; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; loopcount:-1; loopyoyo:true; position:fixed;">to let this slider play</div>
+			<div style="top:45%; left:50%; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:70px;" class="ls-l" data-ls="showinfo:1; offsetyin:-50%; durationin:1500; delayin:500; easingin:easeOutQuint; rotatexin:60; scalexin:.65; scaleyin:.8; offsetyout:50%; startatout:transitioninend + 0; rotatexout:-60; scalexout:.65; scaleyout:.8; keyframe:true;">introducing a great new feature</div>
+			<div style="top:55%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-family:Nunito; color:#bcd900; font-size:110px;" class="ls-l" data-ls="showinfo:1; offsetyin:-50%; durationin:1500; delayin:750; easingin:easeOutQuint; rotatexin:60; scalexin:.65; scaleyin:.8; offsetyout:50%; startatout:transitioninend + 0; rotatexout:-60; scalexout:.65; scaleyout:.8;">Play By Scroll</div>
+			<div style="top:45%; left:50%; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#bcd900; font-size:70px;" class="ls-l" data-ls="showinfo:1; offsetxin:-50lw; durationin:1500; delayin:2750; easingin:easeOutQuint; rotateyin:-60; scalexin:.8; scaleyin:.65; offsetxout:50lw; startatout:transitioninend + 0; rotateyout:60; scalexout:.8; scaleyout:.65;">you can <strong>play</strong> the slider</div>
+			<div style="top:55%; left:50%; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:70px;" class="ls-l" data-ls="showinfo:1; offsetxin:50lw; durationin:1500; delayin:2750; easingin:easeOutQuint; rotateyin:60; scalexin:.8; scaleyin:.65; offsetxout:-50lw; startatout:transitioninend + 0; rotateyout:-60; scalexout:.8; scaleyout:.65; keyframe:true;">by <strong>scrolling</strong> with your mouse</div>
+			<div style="top:150px; left:50px; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:70px; width:1000px;" class="ls-l" data-ls="showinfo:1; offsetxin:-50lw; delayin:6500; easingin:easeOutQuint; skewxin:60; offsetxout:-50lw; startatout:transitioninend + 0; skewxout:60;">You can set <strong style="color: #bcd900;">keyframes</strong>...</div>
+			<div style="margin-left: -50px; margin-top: -150px;left:100%; text-align:right; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:50px; width:1000px; top:100%;" class="ls-l" data-ls="showinfo:1; offsetxin:50lw; delayin:6500; easingin:easeOutQuint; skewxin:-60; offsetxout:50lw; startatout:transitioninend + 0; skewxout:-60; keyframe:true;">...where the slider <strong>will pause</strong>!</div>
+			<img width="900" height="900" src="images/leaf-9.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:4750; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; loopscalex:1.05; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-8.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:4800; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:3; loopscalex:1.05; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-7.png" class="ls-l" alt="" style="margin-left: 2px;top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:4850; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:5; loopscalex:1.05; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-6.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:4900; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:5; loopscalex:.95; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-5.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:4950; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:-4; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-4.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:5000; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:-7; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-3.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:5050; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:-5; loopscalex:.95; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-2.png" class="ls-l" alt="" style="margin-left: -4px;top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:5100; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:-2; loopscalex:.9; loopcount:-1; loopyoyo:true;">
+			<img width="900" height="900" src="images/leaf-1.png" class="ls-l" alt="" style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:1500; delayin:5150; easingin:easeOutQuint; rotatein:90; scalexin:0; scaleyin:0; startatout:transitioninend + 1250; rotateout:-90; scalexout:.5; scaleyout:.5; loop:true; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; looprotate:3; loopscalex:.95; loopcount:-1; loopyoyo:true;">
+			<div style="top:34%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; font-family:Nunito; color:#bcd900; font-size:110px;" class="ls-l" data-ls="showinfo:1; offsetyin:-50%; durationin:1500; delayin:8500; easingin:easeOutQuint; rotatexin:60; scalexin:.65; scaleyin:.8; offsetyout:50%; startatout:slidechangeonly + 0; rotatexout:-60; scalexout:.65; scaleyout:.8;">Do you like it?</div>
+			<a style="" class="ls-l" href="http://codecanyon.net/cart/add_items?ref=kreatura&amp;item_ids=1362246" target="_blank" data-ls="showinfo:1; offsetyin:-50%; durationin:1500; delayin:8750; easingin:easeOutQuint; rotatexin:60; scalexin:.65; scaleyin:.8; offsetyout:50%; startatout:slidechangeonly + 0; rotatexout:-60; scalexout:.65; scaleyout:.8; hover:true; hovereasingin:easeInOutQuad; hoveropacity:1; hoverbgcolor:#ffffff; hovercolor:#adcc00; hoverborderradius:1;">
+				<p style="top:50%; left:50%; text-align:center; font-weight:400; font-style:normal; text-decoration:none; font-family:Nunito; border-radius:50px; padding-bottom:14px; color:#ffffff; width:600px; font-size:50px; padding-top:14px; background:#adcc00;" class="">Purchase LayerSlider</p>
+			</a>
+			<div style="top:64%; left:50%; text-align:initial; font-weight:200; font-style:normal; text-decoration:none; font-family:Nunito; color:#eee; font-size:50px;" class="ls-l" data-ls="showinfo:1; offsetyin:-50%; durationin:1500; delayin:9000; easingin:easeOutQuint; rotatexin:60; scalexin:.65; scaleyin:.8; offsetyout:50%; startatout:slidechangeonly + 0; rotatexout:-60; scalexout:.65; scaleyout:.8;">and explore more awesome features!</div>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+
+			$('#slider').layerSlider({
+				sliderVersion: '6.0.3',
+				type: 'fullsize',
+				allowFullscreen: false,
+				playByScroll: true,
+				skin: 'v6',
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/',
+				height: 1080
+			});
+		});
+
+	</script>
+</body>
+</html>

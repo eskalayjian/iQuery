@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Popup Sidebar Demo</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,regular,700">
+
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/popup/layerslider.popup.css">
+	<script src="../../layerslider/plugins/popup/layerslider.popup.js"></script>
+
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div class="ls-popup">
+		<div id="slider" style="width:300px;height:600px;margin:0 auto;margin-bottom: 0px;">
+
+
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="kenburnsscale:1.2;">
+				<img width="1120" height="1000" src="images/countryside-blur.jpg" class="ls-bg" alt="" />
+				<div style='background-image: url("https://layerslider.kreaturamedia.com/wp-content/uploads/2017/06/countryside.jpg"); background-size: cover; background-position: 50% 50%;top:0px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:100%; height:100%;' class="ls-l" data-ls="showinfo:1; durationin:3000; loop:true; loopduration:10000; loopstartat:transitioninstart + 0; loopeasing:easeInOutSine; loopscalex:1.15; loopscaley:1.15; loopcount:-1; loopyoyo:true; loopfilter:hue-rotate(-20deg); position:fixed;"></div>
+				<div style="top:42px; text-align:center; font-weight:600; font-style:normal; text-decoration:none; mix-blend-mode:normal; color:#ffffff; font-family:'Roboto Slab'; left:50%; width:260px; border-top:3px dotted white; border-bottom:3px dotted white; padding-top:10px; padding-bottom:10px; font-size:34px; white-space:normal;" class="ls-l" data-ls="showinfo:1; scaleyin:0; texttransitionin:true; texttypein:lines_asc; textshiftin:100; textoffsetxin:100|-100; textstartatin:transitioninend - 600; position:fixed;">autumn in COUNTRYSIDE</div>
+				<div style="margin-top: -40px; cursor: pointer;top:100%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:hard-light; border-top:2px dotted white; border-right:2px dotted white; border-bottom:2px dotted white; border-left:2px dotted white; padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px; font-family:'Roboto Slab'; font-size:34px; border-radius:6px; color:#ffffff; background:#382f2a; letter-spacing:4px;" class="ls-l ls-close-popup" data-ls="showinfo:1; offsetyin:bottom; durationin:1500; delayin:1000; fadein:false; hover:true; hoveroffsety:-10; hoverdurationin:750; hoverdurationout:500; hovereasingin:easeOutElastic; hovereasingout:easeInOutQuint; position:fixed;">BOOK NOW</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.0b2',
+				type: 'popup',
+				autoStart: false,
+				startInViewport: false,
+				pauseOnHover: 'disabled',
+				keybNav: false,
+				touchNav: false,
+				forceCycles: false,
+				skin: 'noskin',
+				globalBGSize: 'cover',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				popupShowOnTimeout: 1,
+				popupShowOnce: false,
+				popupShowCloseButton: false,
+				popupStartSliderImmediately: true,
+				popupFitHeight: true,
+				popupPositionHorizontal: 'right',
+				popupDistanceLeft: 0,
+				popupDistanceRight: 0,
+				popupDistanceTop: 0,
+				popupDistanceBottom: 0,
+				popupTransitionIn: 'slidefromright',
+				popupTransitionOut: 'slidetoright',
+				popupOverlayBackground: 'rgba(255, 255, 255, 0.1)',
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["popup"]
+			});
+		});
+
+	</script>
+</body>
+</html>

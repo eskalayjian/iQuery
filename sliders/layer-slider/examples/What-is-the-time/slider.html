@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What is the time?</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:regular,700,900,100,200,300|Titillium+Web:900,regular">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:720px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="globalhover:true; kenburnsscale:1.2; parallaxtype:3d;">
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:100%; height:100%;" class="ls-l" data-ls="autoplay:enabled; controls:disabled; backgroundvideo:true;">
+				<iframe width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-src="https://player.vimeo.com/video/186168168?loop=1"></iframe>
+			</div>
+			<div style="top:50%; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal; width:100%; height:100%; background:rgba(0, 0, 0, 0.24);" class="ls-l" data-ls="showinfo:1; hover:true; hoveropacity:0;"></div>
+			<p style="text-shadow: 0 5px 20px rgba(0,0,0,0.1); ;top:294px; left:50%; text-align:initial; font-weight:900; font-style:normal; text-decoration:none; mix-blend-mode:overlay; font-family:'Titillium Web'; color:rgba(255, 255, 255, 0.99); font-size:90px; line-height:90px;" class="ls-l" data-ls="showinfo:1; delayin:500; fadein:false; texttransitionin:true; texttypein:chars_center; textshiftin:25; textoffsetyin:200; texteasingin:easeOutBack; textstartatin:transitioninstart + 0; textrotatein:random(-45,45) ; hover:true; hoveroffsety:-450 ;">What is the time?</p>
+			<p style="text-shadow: 0 5px 20px rgba(0,0,0,0.1); ;top:383px; left:50%; text-align:initial; font-weight:700; font-style:normal; text-decoration:none; mix-blend-mode:soft-light; font-family:Montserrat; color:#ffffff; font-size:28px;" class="ls-l" data-ls="showinfo:1; delayin:500; fadein:false; texttransitionin:true; texttypein:chars_center; textshiftin:25; texteasingin:easeOutBack; textstartatin:transitioninstart + 1000; hover:true; hoveroffsety:-450;">( move your mouse over the slider )</p>
+			<img width="1499" height="469" src="images/watch-arm-color-compr.png" class="ls-l" alt="" style="top:707px; left:-455px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; mix-blend-mode:normal;" data-ls="showinfo:1; durationin:1500; easingin:easeOutExpo; fadein:false; transformoriginin:25% 50% 0; hover:true; hoveroffsety:-600; hoverdurationin:1000; hovereasingin:easeOutExpo; hoverrotate:-10; hoveralwaysontop:false; parallax:true; parallaxlevel:-10; rotation:10;">
+			<img width="300" height="300" src="images/hour.png" class="ls-l" alt="" style="top:285px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0; width:150px;" id="hours" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:86400000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1; hover:true; hoverdurationin:1300; hoverdurationout:1; hovereasingin:easeInBack; hovereasingout:linear; hoveropacity:1; parallax:true; parallaxlevel:-10;">
+			<img width="300" height="300" src="images/minute.png" class="ls-l" alt="" style="top:285px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0; width:150px;" id="minutes" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:3600000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1; hover:true; hoverdurationin:1300; hoverdurationout:1; hovereasingin:easeInBack; hovereasingout:linear; hoveropacity:1; parallax:true; parallaxlevel:-10;">
+			<img width="300" height="300" src="images/second.png" class="ls-l seconds" alt="" style="top:285px; left:50%; text-align:initial; font-weight:400; font-style:normal; text-decoration:none; opacity:0; width:150px;" data-ls="showinfo:1; overlay:null; durationin:2000; scalexin:.98; scaleyin:.98; loop:true; loopduration:60000; loopstartat:transitioninstart + 0; looprotate:360; loopcount:-1; hover:true; hoverdurationin:1300; hoverdurationout:1; hovereasingin:easeInBack; hovereasingout:linear; hoveropacity:1; parallax:true; parallaxlevel:-10;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$("#slider").on('sliderDidLoad', function( event, slider ) {
+				var	d = new Date(),
+					rotateHours,
+					rotateMinutes,
+					rotateSeconds,
+					curHours = d.getHours(),
+					curMinutes = d.getMinutes(),
+					curSeconds = d.getSeconds();
+				
+				if( curHours >= 12 ){ curHours -= 12; }
+			
+				rotateSeconds = 360 / 60 * curSeconds;
+				rotateMinutes = 360 / 60 * curMinutes + 6 * rotateSeconds / 360;
+				rotateHours = 360 / 12 * curHours + 30 * rotateMinutes / 360;
+			
+				jQuery( '#hours' ).attr( 'data-ls', jQuery( '#hours' ).attr( 'data-ls') + 'rotate: ' + rotateHours );
+				jQuery( '#minutes' ).attr( 'data-ls', jQuery( '#minutes' ).attr( 'data-ls') + 'rotate: ' + rotateMinutes );
+				jQuery( '.seconds' ).attr( 'data-ls', jQuery( '.seconds' ).first().attr( 'data-ls') + 'rotate: ' + rotateSeconds );
+				
+				TweenMax.ticker.useRAF(false);
+				TweenMax.lagSmoothing(0);
+			
+			});
+
+
+			$('#slider').layerSlider({
+				sliderVersion: '6.5.8',
+				skin: 'v6',
+				globalBGSize: 'cover',
+				navPrevNext: false,
+				hoverPrevNext: false,
+				navStartStop: false,
+				navButtons: false,
+				showCircleTimer: false,
+				thumbnailNavigation: 'disabled',
+				skinsPath: '../../layerslider/skins/'
+			});
+		});
+
+	</script>
+</body>
+</html>

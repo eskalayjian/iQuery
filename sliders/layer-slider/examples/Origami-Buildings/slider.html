@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Origami Buildings</title>
+
+	<!-- LayerSlider CSS -->
+	<link rel="stylesheet" href="../../layerslider/css/layerslider.css">
+	
+	<!-- External libraries: jQuery & GreenSock -->
+	<script src="../../layerslider/js/jquery.js"></script>
+	<script src="../../layerslider/js/greensock.js"></script>
+
+	<!-- LayerSlider script files -->
+	<script src="../../layerslider/js/layerslider.transitions.js"></script>
+	<script src="../../layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+	
+	<!-- LayerSlider plugin files -->
+	<link rel="stylesheet" href="../../layerslider/plugins/origami/layerslider.origami.css">
+	<script src="../../layerslider/plugins/origami/layerslider.origami.js"></script>
+	
+</head>
+<body>
+
+	<!-- Slider HTML markup -->
+	<div id="slider" style="width:1280px;height:720px;margin:0 auto;margin-bottom: 0px;">
+		
+		
+		<!-- Slide 1-->
+		<div class="ls-slide" data-ls="duration:5000; transitionorigami:true; overflow:true; kenburnszoom:out; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/b-1.jpg" class="ls-bg" alt="" />
+			<img width="401" height="391" src="images/origami-3.png" class="ls-l" alt="" style="top:-56px; left:-121px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:3000; delayin:2000; easingin:easeOutBack; rotatein:10; scalexin:1.2; scaleyin:1.6; offsetxout:-400; easingout:easeInBack; skewxout:30; scalexout:1.6; scaleyout:1.2;">
+		</div>
+		
+		
+		<!-- Slide 2-->
+		<div class="ls-slide" data-ls="duration:5000; transitionorigami:true; overflow:true; kenburnszoom:in; kenburnsrotate:-5; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/b-2.jpg" class="ls-bg" alt="" />
+			<img width="338" height="397" src="images/origami-1.png" class="ls-l" alt="" style="top:285px; left:959px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:4000; delayin:1000; easingin:easeOutBack; rotatein:10; scalexin:1.8; scaleyin:1.4; transformoriginin:0% 100% 0; easingout:easeInBack; skewxout:-30; scalexout:1.8; scaleyout:1.4;">
+		</div>
+		
+		
+		<!-- Slide 3-->
+		<div class="ls-slide" data-ls="duration:5000; transitionorigami:true; overflow:true; kenburnszoom:in; kenburnsscale:1.1;">
+			<img width="1280" height="720" src="images/b-3.jpg" class="ls-bg" alt="" />
+			<img width="351" height="374" src="images/origami-4.png" class="ls-l" alt="" style="top:40px; left:0px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; durationin:5000; easingin:easeInOutSine; skewxin:20; scalexin:1.5; scaleyin:1.5; transformoriginin:100% 100% 0; startatout:slidechangeonly + 0; easingout:easeInCubic; skewyout:20; scalexout:.5; scaleyout:.5; transformoriginout:100% 100% 0;">
+		</div>
+		
+		
+		<!-- Slide 4-->
+		<div class="ls-slide" data-ls="duration:5000; transitionorigami:true; overflow:true; kenburnszoom:out; kenburnsrotate:-5; kenburnsscale:1.2;">
+			<img width="1280" height="741" src="images/b-4.jpg" class="ls-bg" alt="" />
+			<img width="404" height="266" src="images/origami-5.png" class="ls-l" alt="" style="top:412px; left:87px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:-300; offsetyin:-50; durationin:4000; delayin:1000; easingin:easeOutQuint; scalexin:1.4; transformoriginin:100% 50% 0; offsetxout:-300; offsetyout:-50; easingout:easeInBack; scalexout:1.4; transformoriginout:100% 50% 0;">
+		</div>
+		
+		
+		<!-- Slide 5-->
+		<div class="ls-slide" data-ls="duration:5000; transitionorigami:true; overflow:true; kenburnszoom:in; kenburnsscale:1.2;">
+			<img width="1280" height="720" src="images/b-5.jpg" class="ls-bg" alt="" />
+			<img width="312" height="240" src="images/origami-2b.png" class="ls-l" alt="" style="top:90px; left:915px; text-align:initial; font-weight:400; font-style:normal; text-decoration:none;" data-ls="showinfo:1; offsetxin:300; offsetyin:300; durationin:4000; delayin:1000; easingin:easeOutQuart; offsetxout:-300; offsetyout:-300; easingout:easeInQuart; scalexout:.65; scaleyout:.65;">
+		</div>
+	</div>
+
+
+	<!-- Initializing the slider -->
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			
+			$('#slider').layerSlider({
+				sliderVersion: '6.1.0',
+				skin: 'v6',
+				hoverBottomNav: true,
+				showCircleTimer: false,
+				skinsPath: '../../layerslider/skins/',
+				plugins: ["origami"]
+			});
+		});
+
+	</script>
+</body>
+</html>
